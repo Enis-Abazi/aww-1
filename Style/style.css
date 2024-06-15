@@ -1,223 +1,299 @@
 *,
 *::before,
 *::after {
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
+
 body {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 @font-face {
-  font-family: "Bold";
-  src: url(../Fonts/Sora-Bold.ttf);
+    font-family: "Bold";
+    src: url(../Fonts/Sora-Bold.ttf);
 }
+
 @font-face {
-  font-family: "Medium";
-  src: url(../Fonts/Sora-Medium.ttf);
+    font-family: "Medium";
+    src: url(../Fonts/Sora-Medium.ttf);
 }
+
 @font-face {
-  font-family: "Regular";
-  src: url(../Fonts/Sora-Regular.ttf);
+    font-family: "Regular";
+    src: url(../Fonts/Sora-Regular.ttf);
 }
+
 @font-face {
-  font-family: "Thin";
-  src: url("../Fonts/Sora-Thin.ttf");
+    font-family: "Thin";
+    src: url("../Fonts/Sora-Thin.ttf");
 }
+
 header {
-  width: 100%;
-  background-color: #000033;
-  position: fixed;
-  border-bottom: 1px solid #84858e;
-  z-index: 10;
-  top: 0;
+    width: 100%;
+    background-color: #000033;
+    position: fixed;
+    border-bottom: 1px solid #84858e;
+    z-index: 10;
+    top: 0;
 }
+
 header::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.2px;
-  background: #aaaab2;
-  bottom: 0;
-  left: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2px;
+    background: #aaaab2;
+    bottom: 0;
+    left: 0;
 }
+
 header .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
 }
+
 header .row .col {
-  position: relative;
-  color: #fff;
+    position: relative;
+    color: #fff;
 }
+
 header .row .col img {
-  width: 120px;
-  overflow: hidden;
-  position: relative;
-  left: 15px;
+    width: 120px;
+    overflow: hidden;
+    position: relative;
+    left: 15px;
 }
+
 header .row .col .navbar {
-  display: flex;
-  column-gap: 25px;
-  align-items: center;
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
 }
+
 header .row .col .navbar li {
-  font-size: 12px;
-  font-family: "Medium";
+    font-size: 12px;
+    font-family: "Medium";
+    cursor: pointer;
 }
+
 header .row .col a {
-  margin: 0 40px 0 0;
+    margin: 0 40px 0 0;
 }
+
 header .row .col button {
-  background-color: #457aff;
-  color: #fff;
-  font-size: 12px;
-  outline: none;
-  cursor: pointer;
-  font-family: "Medium";
-  padding: 13px 16px;
-  border: none;
-  border-radius: 6px;
+    background-color: #457aff;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Medium";
+    padding: 13px 16px;
+    border: none;
+    border-radius: 6px;
 }
+
 .banner {
-  padding: 124px 0 0 0;
-  position: relative;
-  background-color: #000033;
-  width: 100%;
-  height: fit-content;
+    padding: 124px 0 0 0;
+    position: relative;
+    background-color: #000033;
+    width: 100%;
+    height: fit-content;
 }
+
 .banner .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
 }
+
 .banner .row .col {
-  flex-basis: 50%;
-  position: relative;
+    position: relative;
 }
+
 .banner .row .col .title {
-  padding: 0 0 0 35px;
+    padding: 0 0 0 35px;
 }
+
 .banner .row .col .title h1 {
-  font-size: 45px;
-  font-family: "Medium";
-  color: #fff;
-  padding: 5px 0;
+    font-size: 45px;
+    font-family: "Medium";
+    color: #fff;
+    padding: 5px 0;
 }
+
 .banner .row .col .title h4 {
-  font-size: 17px;
-  font-family: "Thin";
-  color: #d6d6e7;
-  padding: 12px 0;
+    font-size: 17px;
+    font-family: "Thin";
+    color: #d6d6e7;
+    padding: 12px 0;
 }
+
 .banner .row .col .banner-get-started-div {
-  padding: 20px 0;
+    padding: 20px 0;
 }
+
 .banner .row .col .get-started-button-title-div {
-  background-color: #457aff;
-  color: #fff;
-  font-size: 12px;
-  outline: none;
-  cursor: pointer;
-  font-family: "Medium";
-  padding: 13px 16px;
-  border: none;
-  border-radius: 6px;
+    background-color: #457aff;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Medium";
+    padding: 13px 16px;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    z-index: 5;
 }
+
 .banner .row .col-bg .person-img {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    text-align: center;
 }
+
 .banner .row .col-bg .person-img .p-image {
-  position: relative;
-  width: 325px;
-  object-fit: contain;
-  z-index: 1;
+    position: relative;
+    width: 325px;
+    object-fit: contain;
+    z-index: 1;
 }
+
 .banner .row .col-bg .person-img .b-image {
-  width: 700px;
-  object-fit: cover;
-  position: absolute;
-  left: -78px;
-  z-index: 0;
-  text-align: center;
-  top: -3px;
-  height: 455px;
+    width: 700px;
+    object-fit: cover;
+    position: absolute;
+    left: -78px;
+    z-index: 0;
+    text-align: center;
+    top: -3px;
+    height: 455px;
 }
+
 .banner .row .animation-text {
-  position: absolute;
-  z-index: 3;
-  right: -20%;
-  top: 30%;
-  width: 100%;
-  height: 200px;
+    position: absolute;
+    z-index: 3;
+    right: -20%;
+    top: 30%;
+    width: 100%;
+    height: 200px;
 }
+
 .banner .row .input-mic {
-  display: block;
-  text-align: center;
-  margin: 30px 0;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
 }
+
 .banner .row .input-mic .text {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: start;
-  width: 400px;
-  position: absolute;
-  left: 38%;
-  padding: 5px 0;
-  border-radius: 50px;
-  height: 50px;
-  overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: start;
+    width: 400px;
+    position: absolute;
+    left: 38%;
+    padding: 5px 0;
+    border-radius: 50px;
+    height: 50px;
+    overflow: hidden;
 }
+
 .banner .row .input-mic .text h2 {
-  /* Existing styles */
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-  font-size: 19px;
-  left: 20px;
-  top: 16px;
-  color: white;
-  font-family: "Bold";
-  cursor: none;
-  animation: typing 2s steps(100, end) infinite;
-  animation-delay: 0s;
-  overflow: hidden;
-  white-space: nowrap;
+    /* Existing styles */
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 19px;
+    left: 20px;
+    top: 16px;
+    color: white;
+    font-family: "Bold";
+    cursor: none;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    animation: typing 2s steps(100, start) infinite;
+    animation-delay: 0s;
+}
+
+.banner .col-bg {
+    flex-basis: 50%;
+    position: relative;
 }
 
 .banner .row .input-mic .text img {
-  height: 30px;
-  position: absolute;
-  right: 20px;
-  top: 13px;
-  fill: white;
-  filter: invert(1);
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    fill: white;
+    filter: invert(1);
 }
+
 .container .text-animation {
-  text-align: start;
-  padding: 50px;
+    text-align: start;
+    padding: 50px;
+}
+
+.row-flex {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: end;
+    bottom: 10px;
+    left: 16px;
+}
+
+.row-flex .col-flex {
+    flex-basis: 10%;
+    position: relative;
+}
+
+.row-flex .col-flex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    animation: flash 4s infinite;
+}
+
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: var(--content-width);
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--content-width);
+    }
 }
