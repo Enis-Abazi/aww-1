@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background: linear-gradient(to right, blue, green);
 }
 ul,
 ol {
@@ -62,4 +63,42 @@ a {
   color: whitesmoke;
   background-color: blue;
   text-align: center;
+}
+.input-mic {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+.input-mic .text {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  position: absolute;
+  left: 38%;
+  padding: 5px 0;
+  border-radius: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.input-mic .text h2 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 19px;
+  right: 55px;
+  top: -2px;
+  color: white;
+  font-family: sans-serif;
+  cursor: none;
+}
+.input-mic .text img {
+  height: 30px;
+  position: relative;
+  left: 50px;
+  top: 9px;
+  fill: white;
+  filter: invert(1);
 }
