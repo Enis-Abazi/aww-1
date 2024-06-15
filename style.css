@@ -102,3 +102,21 @@ a {
   fill: white;
   filter: invert(1);
 }
+li {
+  font-size: 17px;
+  background-color: black;
+  width: max-content;
+  padding: 10px;
+  color: white;
+}
+.p:hover .m {
+  display: block;
+}
+.m {
+  display: none;
+}
+.p-c {
+  text-align: start;
+  position: relative;
+  right: 50px;
+}
