@@ -75,6 +75,7 @@ header .row .col img {
     overflow: hidden;
     position: relative;
     left: 15px;
+    /* filter: opacity(1) drop-shadow(0 0 0 #457aff); */
 }
 
 header .row .col .navbar {
@@ -83,14 +84,16 @@ header .row .col .navbar {
     align-items: center;
 }
 
-header .row .col .navbar li {
+header .row .col .navbar li a {
     font-size: 12px;
     font-family: "Medium";
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
 }
 
 header .row .col a {
-    margin: 0 40px 0 0;
+    margin: 0 28px 0 0;
 }
 
 header .row .col button {

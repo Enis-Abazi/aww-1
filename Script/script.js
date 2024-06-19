@@ -123,12 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentContent = this.nextElementSibling;
             const openContent = document.querySelector('.accordion-content.activeAccordion');
 
-            // Close the previously opened accordion
             if (openContent && openContent !== currentContent) {
                 openContent.classList.remove('activeAccordion');
             }
 
-            // Toggle the current accordion
             if (currentContent !== openContent) {
                 currentContent.classList.add('activeAccordion');
             } else {
