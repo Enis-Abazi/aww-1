@@ -39,6 +39,12 @@ a {
     src: url("../Fonts/Sora-Thin.ttf");
 }
 
+
+/* header menu  */
+
+
+/* heder menu  */
+
 header {
     width: 100%;
     background-color: #fff;
@@ -537,6 +543,7 @@ header .row .col button {
     padding: 15px;
     border: 2px solid #fff;
     border-radius: 6px;
+    cursor: pointer;
     color: #fff;
     font-family: "Medium";
 }
@@ -618,4 +625,51 @@ header .row .col button {
     padding: 25px 0;
     font-family: "Thin";
     border-top: 1px solid #484c7a;
+}
+
+@media (min-width: 834px) and (max-width: 1194px) {
+    .banner .contentText h1 {
+        font-size: 42px;
+    }
+    .banner .content h3 {
+        font-size: 17px;
+    }
+    .second-container {
+        padding: 0px;
+    }
+    .second-container .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .second-container .row .col {
+        padding: 50px 253px 50px 285px;
+    }
+    .second-container .row .col .line-build {
+        width: 100%;
+    }
+    .detailed {
+        padding: 90px 0 0 0;
+    }
+    .detailed .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 60px;
+    }
+    .add-ons {
+        padding: 40px 0 50px 0;
+    }
+    .add-ons .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 30px;
+    }
+    .add-ons .btn {
+        padding: 30px 0;
+    }
+    .last .row .col .contentText h1 {
+        font-size: 34px;
+    }
+    .last {
+        padding: 60px 0 68px 0;
+    }
 }
