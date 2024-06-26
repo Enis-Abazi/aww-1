@@ -1266,7 +1266,7 @@ Animations
 .make-merchandising .lg-view {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #0099ff;
+    color: #457aff;
     font-family: "Medium";
 }
 
@@ -1295,7 +1295,7 @@ Animations
 .make-merchandising .left-container {
     flex: 1;
     height: 480px;
-    background-color: #0099ff;
+    background-color: #457aff;
 }
 
 .make-merchandising .right-container {
@@ -1345,13 +1345,13 @@ Animations
 
 .make-merchandising input:focus,
 .make-merchandising textarea:focus {
-    outline: 1px solid #0099ff;
+    outline: 1px solid #457aff;
 }
 
 .make-merchandising button {
     border-radius: 20px;
-    border: 1px solid #0099ff;
-    background-color: #0099ff;
+    border: 1px solid #457aff;
+    background-color: #457aff;
     color: #FFFFFF;
     font-size: 13px;
     font-family: "Medium";
