@@ -1250,64 +1250,116 @@ Animations
 .make-merchandising {
     width: 100%;
     height: 100%;
-    padding: 100px 50px;
     background-color: #fff;
 }
 
-.make-merchandising .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 20px;
-    align-items: center;
-}
-
-.make-merchandising .row .col {
-    flex-basis: 50%;
+.make-merchandising .containerr {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
-}
-
-.make-merchandising .row .col .img img {
-    width: 500px;
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    cursor: pointer;
 }
 
-.make-merchandising .row .col .contentText {
-    padding: 0 20px;
-}
-
-.make-merchandising .row .col .contentText h1 {
-    color: #000;
+.make-merchandising .lg-view {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0099ff;
     font-family: "Medium";
-    font-size: 40px;
 }
 
-.make-merchandising .row .col .content h3 {
-    color: #484c7a;
-    font-family: "Thin";
-    padding: 3px 0;
-}
-
-.make-merchandising .row .col .content {
-    padding: 20px 20px;
-}
-
-.make-merchandising .row .col .btn button {
-    background-color: #457aff;
+.make-merchandising h2 {
     color: #fff;
-    font-size: 19px;
-    outline: none;
-    cursor: pointer;
+    overflow: hidden;
+    padding: 2px 0;
     font-family: "Medium";
-    padding: 17px 47px;
-    border: none;
-    border-radius: 6px;
+    font-size: 30px;
 }
 
-.make-merchandising .row .col .btn {
-    padding: 0 20px;
+.make-merchandising p {
+    font-family: "Thin";
+    font-size: 15px;
+}
+
+.make-merchandising .sm-view {
+    color: #84858e;
+    font-family: "Thin";
+}
+
+.make-merchandising .form-container {
+    display: flex;
+}
+
+.make-merchandising .left-container {
+    flex: 1;
+    height: 480px;
+    background-color: #0099ff;
+}
+
+.make-merchandising .right-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.make-merchandising .left-container {
+    display: flex;
+    flex: 1;
+    padding: 30px 0;
+    height: 514px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.make-merchandising .right-inner-container {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+.make-merchandising .left-inner-container {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px;
+}
+
+.make-merchandising input,
+.make-merchandising textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+    resize: none;
+    font-family: "Medium";
+}
+
+.make-merchandising input:focus,
+.make-merchandising textarea:focus {
+    outline: 1px solid #0099ff;
+}
+
+.make-merchandising button {
+    border-radius: 20px;
+    border: 1px solid #0099ff;
+    background-color: #0099ff;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: "Medium";
+    padding: 12px 55px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
 }
 
 
