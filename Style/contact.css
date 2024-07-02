@@ -770,6 +770,9 @@ header .row .col button {
         flex-direction: column;
         padding: 0;
     }
+    .banner .row .col {
+        width: 100%;
+    }
     .banner .row .col .text h4 {
         font-size: 16.2px;
     }
@@ -799,6 +802,9 @@ header .row .col button {
     }
     .last {
         padding: 60px 0 68px 0;
+    }
+    .banner .row .col {
+        width: 100%;
     }
 }
 
