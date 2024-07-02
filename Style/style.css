@@ -32,6 +32,11 @@ a {
 }
 
 @font-face {
+    font-family: "Anton";
+    src: url(../Fonts/AntonSC-Regular.ttf);
+}
+
+@font-face {
     font-family: "Medium";
     src: url(../Fonts/Sora-Medium.ttf);
 }
@@ -812,7 +817,9 @@ Our Services
 }
 
 .our-services .row .col .flex-col {
-    padding: 20px 0;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
 }
 
 .our-services .row .col h1 {
@@ -1098,16 +1105,28 @@ How it works section
 .ci img {
     -moz-user-select: none;
     user-select: none;
+    width: 100%;
+    height: 100%;
+}
+
+.ci::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgba(0, 0, 0, 20%);
 }
 
 .ch {
     position: absolute;
-    top: 70%;
-    left: 4%;
+    top: 10%;
+    font-family: "Anton";
+    left: 2%;
+    color: #fff;
     transform: translateY(-50%);
-    font-size: 2rem;
-    color: hsla(var(--h) var(--s) var(--l) / .8);
-    text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+    font-size: 50px;
+    text-shadow: -1px -6px 6px rgba(0, 0, 0, 0.71);
 }
 
 .c input {
@@ -1134,7 +1153,8 @@ How it works section
 }
 
 .c input:checked+label {
-    background: linear-gradient(to right, hsla(var(--hue) 80% 70% / .7), hsla(calc(var(--hue) + 30) 80% 50% / .7));
+    /* background: linear-gradient(to right, hsla(var(--hue) 80% 70% / .7), hsla(calc(var(--hue) + 30) 80% 50% / .7)); */
+    background-color: transparent;
 }
 
 .c input:not(:checked)+label+.ci {
@@ -1292,6 +1312,7 @@ How it works section
 .center-circle {
     position: absolute;
     width: 230px;
+    overflow: hidden;
     aspect-ratio: 1 / 1;
     left: 50%;
     top: 50%;
@@ -1299,6 +1320,11 @@ How it works section
     background: #FFFFFF;
     box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
+}
+
+.center-circle img {
+    width: 100%;
+    height: 100%;
 }
 
 .second-circle {
@@ -1925,7 +1951,8 @@ Animations
     position: relative;
 }
 
-.footer .row .col h3 {
+.footer .row .col a {
+    text-decoration: none;
     font-family: "Thin";
     font-size: 18px;
     color: #484c7a;
@@ -1933,7 +1960,7 @@ Animations
     width: max-content;
 }
 
-.footer .row .col h3:hover {
+.footer .row .col a:hover {
     color: #fff;
     transition: 0.3s ease-in;
 }
@@ -2036,6 +2063,28 @@ Animations
     .our-services .row .col h2 {
         padding: 30px;
     }
+    .our-services .row .col p {
+        text-align: center;
+    }
+    .our-services .row .col .flex {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .our-services .contentText span {
+        font-size: 22px;
+    }
+    .our-services .contentText h1 {
+        font-size: 22px;
+    }
+    .our-services .row .col .flex .flex-col h1 {
+        cursor: pointer;
+    }
+    .our-services .lines {
+        padding: 8px 5px;
+    }
+    .our-services .row .col h1 {
+        font-size: 18px;
+    }
     .scaling-works-ahead {
         padding: 50px 20px;
     }
@@ -2057,8 +2106,31 @@ Animations
         flex-direction: column;
         row-gap: 35px;
     }
+    .how-it-works .c .ch {
+        font-family: "Thin";
+    }
+    .how-it-works .c input:checked+label {
+        background-color: transparent;
+    }
     .how-it-works .row .col .title {
         text-align: center;
+    }
+    .how-it-works .c {
+        width: 100%;
+        height: 50vh;
+    }
+    .how-it-works .c .ci img {
+        width: 100%;
+        height: 100%;
+    }
+    .carousel .card {
+        width: 35%;
+    }
+    .carousel .center-circle {
+        width: 150px;
+    }
+    .carousel #card-list {
+        --count: 2 !important;
     }
     .start-your-project {
         padding: 50px 20px;
@@ -2077,11 +2149,15 @@ Animations
         height: 40vh;
     }
     .make-merchandising {
-        padding: 50px 20px;
+        padding: 0;
     }
     .make-merchandising .row {
         flex-direction: column;
         row-gap: 20px;
+    }
+    .make-merchandising .form-container {
+        flex-direction: column;
+        display: block;
     }
     .get-started {
         padding: 50px 20px;
@@ -2089,6 +2165,15 @@ Animations
     .get-started .row {
         flex-direction: column;
         row-gap: 20px;
+    }
+    .get-started .content h1 {
+        font-size: 36px;
+    }
+    .get-started .row .col .contentText h1 {
+        font-size: 23px;
+    }
+    .get-started .row .col .paragraph h3 {
+        font-size: 15px;
     }
     .footer .footer-top {
         padding: 50px 20px;
