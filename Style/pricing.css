@@ -1015,6 +1015,15 @@ header .row .col button {
         padding: 0;
         box-sizing: border-box;
     }
+    header .row .col .navbar {
+        display: none;
+    }
+    header .row .col button {
+        display: none;
+    }
+    .animationMenu {
+        display: block;
+    }
     .banner {
         padding: 203px 50px 141px 50px;
     }
