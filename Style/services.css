@@ -596,6 +596,16 @@ header .row .col button {
     overflow: hidden;
 }
 
+.banner-layout .row .col:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.banner-layout .row .col:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .banner-layout .row .col .contentText {
     padding: 20px 0;
 }
@@ -881,6 +891,18 @@ header .row .col button {
     }
     .banner-layout .row .col {
         width: 100%;
+        position: relative;
+        top: 2px;
+    }
+    .banner-layout .row .col:first-child {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .banner-layout .row .col:last-child {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .last .row .col .contentText h1 {
         font-size: 26px;
