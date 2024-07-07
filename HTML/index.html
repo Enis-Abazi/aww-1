@@ -1,87 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" href="../Images/Abaziwebwork black.png" />
     <link rel="stylesheet" href="../Style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('i06eE0V2pBgApwM3n')
+    </script>
+</head>
+
+<body>
+    <aside class="_social-links">
+        <ul class="_links-list">
+            <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a></li>
+        </ul>
+    </aside>
     <section class="banner">
-      <header>
-        <div class="header-container">
-          <div class="row">
-            <div class="col">
-              <img
-                src="../Images/Abaziwebwork (2.5).png"
-                alt="Abazi Web Works Logo"
-              />
+        <header>
+            <div class="header-container">
+                <div class="row">
+                    <div class="col">
+                        <img src="../Images/Abaziwebwork (2.5).png" alt="Abazi Web Work">
+                    </div>
+                    <div class="col">
+                        <ul class="navbar">
+                            <li><a href="../HTML/services.html">Services</a></li>
+                            <li><a href="../HTML/about.html">About Us</a></li>
+                            <li><a href="../HTML/pricing.html">Pricing</a></li>
+                            <li><a href="../HTML/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <button class="get-started-btn">Get started</button>
+                        </a>
+                    </div>
+                    <div class="animationMenu">
+                        <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+                        <label for="menu-icon"></label>
+                        <nav class="nav">
+                            <ul class="pt-5">
+                                <li><a href="../HTML/services.html">Services</a></li>
+                                <li><a href="../HTML/about.html">About Us</a></li>
+                                <li><a href="./pricing.html">Pricing</a></li>
+                                <li><a href="../HTML/contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
             </div>
-            <div class="col">
-              <ul class="navbar">
-                <li>Services</li>
-                <li>About Us</li>
-                <li>Pricing</li>
-                <li>Portfolio</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div class="col">
-              <a href="#">
-                <button class="get-started-btn">Get started</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="title">
-              <h1>Build your dream website today!</h1>
-              <h4>Affordable, Fast, Professional Static Website</h4>
-              <div class="banner-get-started-div">
-                <button class="get-started-button-title-div">
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title">
+                        <h1>Build your dream website today!</h1>
+                        <h4>Affordable, Fast, Professional Static Website</h4>
+                        <div class="banner-get-started-div">
+                            <button class="get-started-button-title-div">
                   Get Started
                 </button>
-              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-bg">
+                    <div class="person-img">
+                        <img class="p-image" src="../Images/1000_F_613107508_fZoOOPavtoQGurdOFfeKgMeGoU5ViWxf-removebg-preview-transformed.png" alt="Image Smiling Person" />
+                        <img class="b-image" src="../Images/Image [lg_absolute].png" alt="Blur image" />
+                    </div>
+                </div>
+                <div class="animation-text">
+                    <div class="input-mic">
+                        <div class="text">
+                            <h2 id="buildSite">Motivation workout tunes</h2>
+                            <img src="../Images/microphone_163409.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="col-flex">
+                        <img id="userHeadphones" src="../Images/web-design-template-copy-space-concept-removebg-preview.png" alt="" />
+                    </div>
+                    <div class="col-flex">
+                        <img id="bluetoothHeadphones" src="../Images/person-front-computer-working-html-removebg-preview.png" alt="" />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col col-bg">
-            <div class="person-img">
-              <img
-                class="p-image"
-                src="../Images/1000_F_613107508_fZoOOPavtoQGurdOFfeKgMeGoU5ViWxf-removebg-preview-transformed.png"
-                alt="Image Smiling Person"
-              />
-              <img
-                class="b-image"
-                src="../Images/Image [lg_absolute].png"
-                alt="Blur image"
-              />
-            </div>
-          </div>
-          <div class="animation-text">
-            <div class="input-mic">
-              <div class="text">
-                <h2 id="buildSite">Motivation workout tunes</h2>
-                <img src="../Images/microphone_163409.png" alt="" />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section class="choose">
-      <div class="container">
-        <h1>why choose us</h1>
-      </div>
+    <section class="choose-us">
+        <div class="container">
+            <h1>Why choose us</h1>
+            <div class="row">
+                <div class="col">
+                    <h2>Our Unique Selling Points</h2>
+                    <h3>Experienced Team with Over 50 Successful Projects</h3>
+                    <p>
+                        Our skilled team has completed over 50 projects, delivering delivering exceptional results every time.
+                    </p>
+                    <h3>Clean, Reliable Code</h3>
+                    <p>
+                        We write clean, efficient code that ensures your website runs smoothly without crashes or errors.
+                    </p>
+                    <h3>Comprehensive Hosting and Maintenance Services</h3>
+                    <p>
+                        From hosting to ongoing maintenance, we take care of everything to keep your site up-to-date and secure.
+                    </p>
+                    <h3>Custom Designs or Bring Your Own</h3>
+                    <p>
+                        Whether you want a unique design from us or have your own ideas, we can make it happen.
+                    </p>
+                    <h3>Fast Turnaround: 1-7 Days</h3>
+                    <p>
+                        We pride ourselves on quick project completion, delivering high-quality websites in just 1-7 days.
+                    </p>
+                    <div class="learn-more-btn-div">
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="../Images/laptop.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="our-services">
+        <div class="contentText">
+            <h1>About <span>What We Do</span> & We Are</h1>
+            <div class="lines">
+                <div class="line-cut"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</h4>
+            <h4>incididunt ut labore et dolore magna.</h4>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="flex">
+                    <div class="flex-col">
+                        <h1>Maintance Problems</h1>
+                        <p>Lorem Ipsum Text</p>
+                    </div>
+                    <div class="flex-col">
+                        <h1>24/7 Support & Help</h1>
+                        <p>Lorem Ipsum Text</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-col">
+                        <h1>Fixing Issues About</h1>
+                        <p>Lorem Ipsum Text</p>
+                    </div>
+                    <div class="flex-col">
+                        <h1>Co. Development</h1>
+                        <p>Lorem Ipsum Text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../Images/about-right-dec.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="scaling-works-ahead">
+        <div class="container">
+            <h1>Scaling ahead of our works</h1>
+            <h4>
+                Customers depend on AWW when it comes to static website and trust our pure work that we do.
+            </h4>
+            <div class="row">
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number1">0</span>+ million</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>searches every year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number2">0</span>%</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>uptime SLA available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number3">0</span>+</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>customers across 150+ countries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number4">0</span>+ million</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>records indexed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number5">0</span>%</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>compliant & secure with SAML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flex">
+                        <div class="col-flex">
+                            <h2 class="blueText"><span id="number6">0</span>%</h2>
+                        </div>
+                        <div class="col-flex">
+                            <p>ROI according to Forrester Research</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="contant-sales-btn">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="title">How it works</h1>
+                    <ul>
+                        <li>Consultation & Quote" - Discuss project requirements</li>
+                        <li>Design & Development" - Create and refine the website</li>
+                        <li>Review & Launch" - Client review and final launch</li>
+                    </ul>
+                    <button>Contact Sales</button>
+                </div>
+                <div class="col">
+                    <div class="c">
+                        <input type="radio" name="a" id="cr-1" checked>
+                        <label for="cr-1" style="--hue: 32"></label>
+                        <div class="ci" style="--z: 4">
+                            <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%">CONSULT</h2>
+                            <img src="../Images/njuqY8bVEAK48uSGWiXxPi.jpg" alt="Snow on leafs">
+                        </div>
+
+                        <input type="radio" name="a" id="cr-2">
+                        <label for="cr-2" style="--hue: 82"></label>
+                        <div class="ci" style="--z: 3">
+                            <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%">GET IN TOUCH</h2>
+                            <img src="../Images/Image_-_Website_types_.jpeg.jpg" alt="Trees">
+                        </div>
+
+                        <input type="radio" name="a" id="cr-3">
+                        <label for="cr-3" style="--hue: 40"></label>
+                        <div class="ci" style="--z: 2">
+                            <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%">DESIGN</h2>
+                            <img src="../Images/web-design-services-1024x425.jpg" alt="Mountains and houses">
+                        </div>
+                        <input type="radio" name="a" id="cr-4">
+                        <label for="cr-4" style="--hue: 210"></label>
+                        <div class="ci" style="--z: 1">
+                            <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%">DEVELOPMENT</h2>
+                            <img src="../Images/n-feature-image.jpg" alt="Sky and mountains">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="void" id="void">
+                <div class="crop">
+                    <ul id="card-list" style="--count: 6;">
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Service</span><span>Working through advanced technology</span></a></div>
+                        </li>
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Greetings</span><span>We welcome our clients worldwide</span></a></div>
+                        </li>
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Development</span><span>Developing the future</span></a></div>
+                        </li>
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Hosting</span><span>Hosting Secure</span></a></div>
+                        </li>
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Designing</span><span>Designing with pure talent</span></a></div>
+                        </li>
+                        <li>
+                            <div class="card"><a href=""><span class="model-name">AWW Secure</span><span>Secure and trustable</span></a></div>
+                        </li>
+                    </ul>
+                    <div class="last-circle"></div>
+                    <div class="second-circle"></div>
+                </div>
+                <div class="mask"></div>
+                <div class="center-circle">
+                    <img src="../Images/Abaziwebwork (2.5).png" alt="">
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="start-your-project">
+        <div class="container">
+            <div class="title">
+                <h1>Ready to start your project? Let's do it right now!</h1>
+                <h4>
+                    Project that we start, is developed with experience, and it is delivered to client rapidly fast, all of our clients leave good notes when it comes to AWW developing.
+                </h4>
+            </div>
+            <div class="btn">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section class="build-faster">
+        <div class="container">
+            <div class="title">
+                <h1>Build faster and better</h1>
+                <h4>
+                    We build sites based on how our clients wants, the client can choose what type of language we can use for their beautiful project
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="flex">
+                        <div class="flex-col flex-col-20">
+                            <div class="nav-column">
+                                <ul class="parent">
+                                    <li><img src="../Images/folder.png" /> Front End</li>
+                                </ul>
+                                <ul class="childs">
+                                    <li><img src="../Images/html-5.png" /> HTML</li>
+                                    <li><img src="../Images/css-3.png" /> CSS</li>
+                                    <li><img src="../Images/js.png" /> Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-col flex-col-80">
+                            <ul class="code-nav">
+                                <li>const windowPopup = window.alert("Hello World!")</li>
+                                <li>const button = document.querySelector("#btn")</li>
+                                <li>button.addEventlistener("click" , () => {</li>
+                                <li>setTimeout(function() {</li>
+                                <li>windowPopup</li>
+                                <li>}, 2000)</li>
+                                <li>})</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Custom Website Design</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>We create unique and customized designs that perfectly match your vision. Whether you have a specific idea in mind or need guidance, our team will craft a website that stands out.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Expert Development</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Our experienced developers bring your design to life with clean, efficient, and reliable code. Using HTML, CSS, and JavaScript, we build static websites that are fast, secure, and user-friendly.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Ongoing Support</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p> We don’t just build your site and leave you hanging. We offer ongoing support and maintenance to ensure your website remains up-to-date and functioning smoothly.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Secure and Reliable Hosting</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>Enjoy peace of mind with our secure and reliable hosting services. We ensure your website is always accessible, performs well, and stays protected from threats.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="make-merchandising">
+        <div class="containerr">
+            <div class="form-container">
+                <div class="left-container">
+                    <div class="left-inner-container">
+                        <h2>Let's Chat</h2>
+                        <br>
+                        <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                        <br>
+                        <p>Feel free to send me a message in the contact form</p>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="right-inner-container">
+                        <form id="myForm">
+                            <h2 class="lg-view">Just say Hello !</h2>
+                            <p class="sm-view">Let us know more about you !</p>
+                            <!-- <input type="hidden" name="access_key" value="8da9b88b-cd5b-4933-b3d9-5076308da0b4"> -->
+                            <input name="from_name" id="from_name" placeholder="First Name" required />
+                            <input id="lastName" type="text" name="lastName" placeholder="Last Name" required />
+                            <input name="email_id" id="email_id" placeholder="eg. example@gmail.com" required/>
+                            <input id="number_id" type="number" name="number_id" placeholder="Phone (Optional)" />
+                            <textarea rows="4" name="message" id="message" placeholder="Message" required></textarea>
+                            <button type="submit" id="buttonMail">Submit</button>
+                            <h3 class="errorSent">Failed to sent email</h3>
+                        </form>
+                        <div class="succesSent">
+
+                            <img src="../Images/Animation - 1719675760220.gif" alt="">
+                            <audio controls autoplay>
+                                <source src="../Images/level-up-191997.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <section class="get-started">
+        <div class="content">
+            <h1>Get Started</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contentText">
+                    <h1>Make your site now</h1>
+                </div>
+                <div class="paragraph">
+                    <h3>Make your dream site come true with us</h3>
+                    <h3>with your design or not , we still can</h3>
+                    <h3>make it happend</h3>
+                </div>
+                <div class="btn">
+                    <button>Start now</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contentText">
+                    <h1>Design your site now</h1>
+                </div>
+                <div class="paragraph">
+                    <h3>Design your site however you want , and we</h3>
+                    <h3>will make it as fast as possible</h3>
+                </div>
+                <div class="btn">
+                    <button>Start now</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contentText">
+                    <h1>Talk to sales for web</h1>
+                </div>
+                <div class="paragraph">
+                    <h3>If you need to talk to the sales of</h3>
+                    <h3>we have 1 free project to try</h3>
+                </div>
+                <div class="btn">
+                    <button>Get a demo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        <a href="../HTML/services.html">Services</a></h3>
+                </div>
+                <div class="col">
+                    <h3>
+                        <a href="../HTML/about.html">About Us</a></h3>
+                </div>
+                <div class="col">
+                    <h3>
+                        <a href="../HTML/pricing.html">Pricing</a></h3>
+                </div>
+                <div class="col">
+                    <h3>
+                        <a href="../HTML/contact.html">Contact Us</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="rights-reserved">
+                <h2>©2024 AWW - All rights reserved.</h2>
+            </div>
+        </div>
+    </footer>
     <script src="../Script/script.js"></script>
-  </body>
+</body>
+
 </html>
