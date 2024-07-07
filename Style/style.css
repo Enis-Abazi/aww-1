@@ -2053,13 +2053,16 @@ Animations
     .our-services {
         padding: 50px 20px;
     }
-    .our-services .row {
-        flex-direction: column;
-        row-gap: 20px;
-    }
     .our-services h1,
     .our-services h4 {
         text-align: center;
+    }
+    .our-services .row {
+        justify-content: center;
+        width: 100%;
+    }
+    .our-services .row .col {
+        flex-basis: auto;
     }
     .our-services .row .col h2 {
         padding: 30px;
@@ -2067,15 +2070,14 @@ Animations
     .our-services .row .col p {
         text-align: center;
     }
-    .our-services .row .col .flex {
-        flex-direction: column;
-        row-gap: 30px;
-    }
     .our-services .contentText span {
         font-size: 22px;
     }
     .our-services .contentText h1 {
         font-size: 22px;
+    }
+    .our-services .row .col .flex .flex-col {
+        padding: 20px 35px;
     }
     .our-services .row .col .flex .flex-col h1 {
         cursor: pointer;
@@ -2085,6 +2087,9 @@ Animations
     }
     .our-services .row .col h1 {
         font-size: 18px;
+    }
+    .our-services .row .col:last-child {
+        display: none;
     }
     .scaling-works-ahead {
         padding: 50px 20px;
