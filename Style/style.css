@@ -15,6 +15,42 @@ body {
     --count: 8;
     --easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
     --easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
+    --sky-blue: #457aff;
+    --paragraph-color: #484C7A;
+    --main-color: #fff;
+    --bg-color: #f5f5fa;
+    --scrollbar-track-color: #f1f1f1;
+    --scrollbar-thumb: #888;
+    --scrolbar-thumb-hover: #555;
+    --bg-random: #ececee;
+    --color-eee: #eee;
+    --transparent: #FFFFFF;
+    --mid-brown: #353746;
+    --one-one-one: #111;
+    --fa-fa-color: #fafafa;
+    --second-header-color: #84858e;
+    --header-color: #000033;
+    --aaab-color: #aaaab2;
+    --color-based: #d6d6e7;
+    --black-color: #23263b;
+    --second-african-color: #000;
+    --random-color: #232323;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
 }
 
 ol,
@@ -98,8 +134,8 @@ a {
     z-index: 20;
     top: 0;
     left: 0;
-    border-top: 2px solid #ececee;
-    border-bottom: 2px solid #ececee;
+    border-top: 2px solid var(--bg-random);
+    border-bottom: 2px solid var(--bg-random);
     transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -113,7 +149,7 @@ a {
     z-index: 20;
     top: 10px;
     right: 4px;
-    background-color: #ececee;
+    background-color: var(--bg-random);
     margin-top: -1px;
     transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -122,7 +158,7 @@ a {
     top: 10px;
     transform: rotate(45deg);
     height: 2px;
-    background-color: #ececee;
+    background-color: var(--bg-random);
     border-width: 0;
     transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -147,7 +183,7 @@ a {
     z-index: 9;
     overflow: hidden;
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-    background-color: #457aff;
+    background-color: var(--sky-blue);
     animation: border-transform 7s linear infinite;
     transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -242,14 +278,14 @@ a {
     font-weight: 800;
     display: inline-block;
     position: relative;
-    color: #ececee;
+    color: var(--bg-random);
     transition: all 250ms linear;
     overflow: hidden;
 }
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: black;
+    color: var(--second-afric-color);
 }
 
 .nav ul li a:after {
@@ -261,7 +297,7 @@ a {
     margin-top: -1vh;
     width: 0;
     left: 0;
-    background-color: #353746;
+    background-color: var(--mid-brown);
     opacity: 0.8;
     transition: width 250ms linear;
 }
@@ -323,15 +359,15 @@ aside {
     top: 50%;
     transform: translatey(-50%);
     padding: 1em 0.5em 1em 1em;
-    background: #fafafa;
+    background: var(--fa-fa-color);
     border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px #457aff;
+    box-shadow: -4px 0px 0px var(--sky-blue);
     transition: all 300ms ease;
     z-index: 10;
 }
 
 ._social-links:hover {
-    box-shadow: -8px 0px 20px #457aff;
+    box-shadow: -8px 0px 20px var(--sky-blue);
     padding: 1em;
 }
 
@@ -343,17 +379,17 @@ aside {
 }
 
 ._social-link a {
-    color: #111;
+    color: var(--one-one-one);
     font-size: 1.5rem;
     transition: all 200ms ease;
 }
 
 ._social-link a:visited {
-    color: #111;
+    color: var(--one-one-one);
 }
 
 ._social-link a:hover {
-    color: #457aff;
+    color: var(--sky-blue);
     font-size: 1.75rem;
 }
 
@@ -363,9 +399,9 @@ aside {
 
 header {
     width: 100%;
-    background-color: #000033;
+    background-color: var(--header-color);
     position: fixed;
-    border-bottom: 1px solid #84858e;
+    border-bottom: 1px solid var(--second-header-color);
     z-index: 10;
     top: 0;
 }
@@ -375,7 +411,7 @@ header::before {
     position: absolute;
     width: 100%;
     height: 0.2px;
-    background: #aaaab2;
+    background: var(--aaab-color);
     bottom: 0;
     left: 0;
 }
@@ -389,7 +425,7 @@ header .row {
 
 header .row .col {
     position: relative;
-    color: #fff;
+    color: var(--main-color);
 }
 
 header .row .col img {
@@ -397,7 +433,6 @@ header .row .col img {
     overflow: hidden;
     position: relative;
     left: 15px;
-    /* filter: opacity(1) drop-shadow(0 0 0 #457aff); */
 }
 
 header .row .col .navbar {
@@ -410,7 +445,7 @@ header .row .col .navbar li a {
     font-size: 12px;
     font-family: "Medium";
     cursor: pointer;
-    color: #fff;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -419,8 +454,8 @@ header .row .col a {
 }
 
 header .row .col button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -433,7 +468,7 @@ header .row .col button {
 .banner {
     padding: 124px 0 0 0;
     position: relative;
-    background-color: #000033;
+    background-color: var(--header-color);
     width: 100%;
     height: fit-content;
 }
@@ -457,14 +492,14 @@ header .row .col button {
 .banner .row .col .title h1 {
     font-size: 45px;
     font-family: "Medium";
-    color: #fff;
+    color: var(--main-color);
     padding: 5px 0;
 }
 
 .banner .row .col .title h4 {
     font-size: 17px;
     font-family: "Thin";
-    color: #d6d6e7;
+    color: var(--color-based);
     padding: 12px 0;
 }
 
@@ -473,8 +508,8 @@ header .row .col button {
 }
 
 .banner .row .col .get-started-button-title-div {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -548,7 +583,7 @@ header .row .col button {
     font-size: 19px;
     left: 20px;
     top: 16px;
-    color: white;
+    color: var(--main-color);
     font-family: "Bold";
     cursor: none;
     overflow: hidden;
@@ -568,7 +603,7 @@ header .row .col button {
     position: absolute;
     right: 20px;
     top: 13px;
-    fill: white;
+    fill: var(--main-color);
     filter: invert(1);
 }
 
@@ -591,9 +626,9 @@ header .row .col button {
 .banner .row-flex .col-flex {
     flex-basis: 18%;
     position: relative;
-    border: 3px solid #457aff;
+    border: 3px solid var(--sky-blue);
     border-radius: 15px;
-    background: #fff;
+    background: var(--main-color);
     animation: flash 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
@@ -604,13 +639,8 @@ header .row .col button {
     cursor: pointer;
 }
 
-
-/* 
-Choose us 
-*/
-
 .choose-us {
-    background: #fff;
+    background: var(--main-color);
 }
 
 .choose-us .container {
@@ -620,7 +650,7 @@ Choose us
 .choose-us h1 {
     text-align: center;
     font-size: 25px;
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     font-family: "Bold";
 }
 
@@ -640,14 +670,14 @@ Choose us
 .choose-us .row .col h2 {
     font-size: 20px;
     font-family: "Medium";
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     padding: 20px 0;
 }
 
 .choose-us .row .col h3 {
     font-size: 13px;
     font-family: "Medium";
-    color: #484c7a;
+    color: var(--paragraph-color);
     position: relative;
     line-height: 35px;
 }
@@ -661,13 +691,13 @@ Choose us
     width: 25px;
     height: 1.5px;
     border-radius: 10px;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
 }
 
 .choose-us .row .col p {
     font-size: 12px;
     font-family: "Medium";
-    color: #484c7a;
+    color: var(--paragraph-color);
 }
 
 .choose-us .row .col img {
@@ -681,8 +711,8 @@ Choose us
 }
 
 .choose-us .row .col .learn-more-btn-div button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -743,14 +773,9 @@ Choose us
     overflow: hidden;
 }
 
-
-/*
-Our Services
-*/
-
 .our-services {
     padding: 100px;
-    background: #f5f5fa;
+    background: var(--bg-color);
 }
 
 .our-services .contentText {
@@ -773,17 +798,17 @@ Our Services
 .our-services .lines .line-cut {
     width: 20px;
     height: 2px;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
 }
 
 .our-services .lines .line {
     width: 20px;
     height: 2px;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
 }
 
 .our-services .contentText span {
-    color: #457aff;
+    color: var(--sky-blue);
     font-family: "Medium";
     font-size: 28px;
 }
@@ -793,7 +818,7 @@ Our Services
 }
 
 .our-services .content h4 {
-    color: #84858e;
+    color: var(--second-header-color);
     font-family: "Thin";
     padding: 3px 0;
     font-size: 14px;
@@ -819,8 +844,9 @@ Our Services
 
 .our-services .row .col .flex-col {
     padding: 20px 10px;
-    background-color: #fff;
+    background-color: var(--main-color);
     border-radius: 20px;
+    width: 100%;
 }
 
 .our-services .row .col h1 {
@@ -831,11 +857,11 @@ Our Services
 
 .our-services .row .col h1:hover {
     transition: .3s ease-in;
-    color: #457aff;
+    color: var(--sky-blue);
 }
 
 .our-services .row .col p {
-    color: #84858e;
+    color: var(--second-header-color);
     font-family: "Thin";
 }
 
@@ -846,26 +872,21 @@ Our Services
     overflow: hidden;
 }
 
-
-/* 
-Scaling Ahead Works Section
-*/
-
 .scaling-works-ahead {
     padding: 100px;
-    background: #fff;
+    background: var(--main-color);
 }
 
 .scaling-works-ahead h1 {
     font-size: 35px;
-    color: #232323;
+    color: var(--random-color);
     font-family: "Medium";
     text-align: center;
 }
 
 .scaling-works-ahead h4 {
     font-size: 13px;
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     font-family: "Thin";
     padding: 10px 0;
     font-weight: 25px;
@@ -892,7 +913,7 @@ Scaling Ahead Works Section
     align-items: center;
     padding: 5px;
     text-align: center;
-    border-right: 2px solid #457aff;
+    border-right: 2px solid var(--sky-blue);
 }
 
 .scaling-works-ahead .row .col .flex .col-flex {
@@ -902,7 +923,7 @@ Scaling Ahead Works Section
 
 .scaling-works-ahead .row .col .flex .col-flex .blueText {
     font-size: 32px;
-    color: #457aff;
+    color: var(--sky-blue);
     font-family: "Medium";
     overflow: hidden;
 }
@@ -910,13 +931,13 @@ Scaling Ahead Works Section
 .scaling-works-ahead .row .col .flex .col-flex p {
     font-size: 12px;
     font-family: "Medium";
-    color: #232323;
+    color: var(--random-color);
 }
 
 .number-animation {
     font-size: 40px;
     font-weight: bold;
-    color: #0099ff;
+    color: var(--sky-blue);
     margin: 10px 0;
 }
 
@@ -926,8 +947,8 @@ Scaling Ahead Works Section
 }
 
 .scaling-works-ahead .btn button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -937,14 +958,9 @@ Scaling Ahead Works Section
     border-radius: 6px;
 }
 
-
-/*
-How it works section
-*/
-
 .how-it-works {
     padding: 100px;
-    background-color: #d6d6e7;
+    background-color: var(--color-based);
 }
 
 .how-it-works .row {
@@ -963,7 +979,7 @@ How it works section
 .how-it-works .row .col .title {
     font-size: 22px;
     font-family: "Medium";
-    color: #232323;
+    color: var(--random-color);
     padding: 25px 0;
 }
 
@@ -980,12 +996,12 @@ How it works section
     font-size: 15px;
     font-family: "Thin";
     font-weight: 1000;
-    color: #484c7a;
+    color: var(--paragraph-color);
 }
 
 .how-it-works .row .col button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -1005,7 +1021,7 @@ How it works section
 .how-it-works .row .col .flex .col-flex-10 {
     flex-basis: 10%;
     position: relative;
-    box-shadow: 0px 3px 12px #84858e;
+    box-shadow: 0px 3px 12px var(--second-header-color);
     border: none;
     border-radius: 100%;
     overflow: hidden;
@@ -1028,20 +1044,20 @@ How it works section
 }
 
 .how-it-works .row .col .flex .col-flex .icon {
-    color: #232323;
+    color: var(--random-color);
     overflow: hidden;
     padding: 5px 15px;
 }
 
 .how-it-works .row .col .flex .col-flex .icon:hover {
-    background-color: #fff;
+    background-color: var(--main-color);
     transition: 0.3s ease-in;
 }
 
 .how-it-works .row .col .flex .col-flex .icon i {
     overflow: hidden;
     font-size: 22px;
-    color: #0099ff;
+    color: var(--sky-blue);
     padding: 1px 2px;
     position: relative;
     top: 2px;
@@ -1051,7 +1067,7 @@ How it works section
 .how-it-works .row .col .flex .col-flex .contentText h3 {
     font-size: 17px;
     font-family: "Thin";
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     text-align: center;
 }
 
@@ -1063,14 +1079,14 @@ How it works section
 .how-it-works .row .col .quote-editor h1 {
     font-size: 18px;
     font-family: "Thin";
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     padding: 5px 0 0 0;
 }
 
 .how-it-works .row .col .quote-editor h3 {
     font-size: 14px;
     font-family: "Thin";
-    color: #23263b;
+    color: var(--var(--second-afric-color)-color);
     padding: 8px 0;
 }
 
@@ -1124,7 +1140,7 @@ How it works section
     top: 10%;
     font-family: "Anton";
     left: 2%;
-    color: #fff;
+    color: var(--main-color);
     transform: translateY(-50%);
     font-size: 50px;
     text-shadow: -1px -6px 6px rgba(0, 0, 0, 0.71);
@@ -1154,7 +1170,6 @@ How it works section
 }
 
 .c input:checked+label {
-    /* background: linear-gradient(to right, hsla(var(--hue) 80% 70% / .7), hsla(calc(var(--hue) + 30) 80% 50% / .7)); */
     background-color: transparent;
 }
 
@@ -1204,7 +1219,6 @@ How it works section
     overflow: unset;
     top: 50%;
     transform: translateY(-50%);
-    /* 	outline: 2px dashed cyan; */
     width: 100%;
     animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
@@ -1216,7 +1230,7 @@ How it works section
     align-items: flex-start;
     padding: 16px 24px;
     gap: 8px;
-    background: #FFFFFF;
+    background: var(--main-color)FFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     font-family: 'Inter', sans-serif;
@@ -1237,7 +1251,7 @@ How it works section
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #457aff;
+    color: var(--sky-blue);
     display: block;
 }
 
@@ -1318,7 +1332,7 @@ How it works section
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: #FFFFFF;
+    background: var(--main-color);
     box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
 }
@@ -1377,17 +1391,12 @@ How it works section
     height: 100%;
     right: 0;
     display: block;
-    background-image: linear-gradient(180deg, rgba(69, 122, 255, 0.25) 0%, #457aff 50%, rgba(69, 122, 255, 0.25) 0%);
+    background-image: linear-gradient(180deg, rgba(69, 122, 255, 0.25) 0%, var(--sky-blue) 50%, rgba(69, 122, 255, 0.25) 0%);
 }
-
-
-/*
-start your project Section
-*/
 
 .start-your-project {
     padding: 100px;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .start-your-project .title {
@@ -1398,14 +1407,14 @@ start your project Section
 .start-your-project .title h1 {
     font-size: 30px;
     font-family: "Bold";
-    color: #232323;
+    color: var(--random-color);
 }
 
 .start-your-project .title h4 {
     font-size: 14px;
     font-family: "Thin";
     font-weight: 1000;
-    color: #484c7a;
+    color: var(--paragraph-color);
     padding: 10px 0;
 }
 
@@ -1415,8 +1424,8 @@ start your project Section
 }
 
 .start-your-project .btn button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -1426,14 +1435,9 @@ start your project Section
     border-radius: 6px;
 }
 
-
-/*
-Build faster and better Section
-*/
-
 .build-faster {
     padding: 100px;
-    background-color: #000033;
+    background-color: var(--header-color);
 }
 
 .build-faster .title {
@@ -1444,14 +1448,14 @@ Build faster and better Section
 .build-faster .title h1 {
     font-size: 30px;
     font-family: "Bold";
-    color: #fff;
+    color: var(--main-color);
 }
 
 .build-faster .title h4 {
     font-size: 14px;
     font-family: "Thin";
     font-weight: 1000;
-    color: #aaaab2;
+    color: var(--aaab-color);
     padding: 10px 0;
 }
 
@@ -1473,12 +1477,12 @@ Build faster and better Section
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    height: 70vh;
+    height: 80vh;
 }
 
 .build-faster .row .col .flex .flex-col-20 {
     flex-basis: 35%;
-    background: linear-gradient(to bottom, #042077, #000033);
+    background: linear-gradient(to bottom, #042077, var(--header-color));
     border-radius: 10px;
 }
 
@@ -1502,13 +1506,13 @@ Build faster and better Section
     row-gap: 10px;
     align-items: start;
     padding: 10px 0 10px 20px;
-    background: linear-gradient(to bottom, #042077, #000033);
+    background: linear-gradient(to bottom, #042077, var(--header-color));
     width: 100%;
 }
 
 .build-faster .row .col .flex .flex-col-20 .nav-column .parent li {
     font-size: 14px;
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     display: flex;
     align-items: center;
@@ -1525,17 +1529,24 @@ Build faster and better Section
     flex-direction: column;
     row-gap: 5px;
     justify-content: start;
-    padding: 0 0 0 20px;
+    width: 100%;
 }
 
 .build-faster .row .col .flex .flex-col-20 .nav-column .childs li {
     font-size: 14px;
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     display: flex;
     align-items: center;
     column-gap: 10px;
-    padding: 8px 0;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.build-faster .row .col .flex .flex-col-20 .nav-column .childs li:hover {
+    background-color: #c2c2c238;
+    ;
 }
 
 .build-faster .row .col .flex .flex-col-20 .nav-column .childs li img {
@@ -1545,8 +1556,7 @@ Build faster and better Section
 .build-faster .row .col .flex .flex-col-80 .code-nav {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
-    padding: 20px 20px 20px 80px;
+    padding: 20px;
     justify-content: start;
     align-items: start;
     position: relative;
@@ -1557,8 +1567,8 @@ Build faster and better Section
     position: absolute;
     width: 1px;
     height: -webkit-fill-available;
-    background-color: #aaaab2;
-    top: 30px;
+    background-color: var(--aaab-color);
+    top: 0px;
     left: 15%;
     overflow: hidden;
 }
@@ -1568,10 +1578,17 @@ Build faster and better Section
     font-family: "Thin";
     font-size: 14px;
     position: relative;
+    padding: 10px 0 0 45px;
 }
 
-
-/* Basic styling */
+.build-faster .row .col .flex .flex-col-80 .code-nav li::before {
+    content: attr(data-line-number);
+    font-size: 14px;
+    color: var(--main-color);
+    font-family: "Medium";
+    position: absolute;
+    left: 10px;
+}
 
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;
@@ -1579,7 +1596,7 @@ Build faster and better Section
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid #457aff;
+    border-bottom: 1px solid var(--sky-blue);
 }
 
 .accordion button {
@@ -1599,14 +1616,14 @@ Build faster and better Section
 .accordion button:hover,
 .accordion button:focus {
     cursor: pointer;
-    color: #457aff;
+    color: var(--sky-blue);
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
     cursor: pointer;
-    color: #457aff;
-    border: 1px solid #457aff;
+    color: var(--sky-blue);
+    border: 1px solid var(--sky-blue);
 }
 
 .accordion button .accordion-title {
@@ -1647,7 +1664,7 @@ Build faster and better Section
 }
 
 .accordion button[aria-expanded='true'] {
-    color: #457aff;
+    color: var(--sky-blue);
 }
 
 .accordion button[aria-expanded='true'] .icon::after {
@@ -1673,17 +1690,9 @@ Build faster and better Section
     font-size: 14px;
     font-weight: 300;
     margin: 2em 0;
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
 }
-
-
-/* accordion end  */
-
-
-/* 
-Animations
-*/
 
 @keyframes flash {
     0%,
@@ -1697,13 +1706,10 @@ Animations
     }
 }
 
-
-/* .make-merchandising start */
-
 .make-merchandising {
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .make-merchandising .containerr {
@@ -1719,12 +1725,12 @@ Animations
 .make-merchandising .lg-view {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #457aff;
+    color: var(--sky-blue);
     font-family: "Medium";
 }
 
 .make-merchandising h2 {
-    color: #fff;
+    color: var(--main-color);
     overflow: hidden;
     padding: 2px 0;
     font-family: "Medium";
@@ -1737,7 +1743,7 @@ Animations
 }
 
 .make-merchandising .sm-view {
-    color: #84858e;
+    color: var(--second-header-color);
     font-family: "Thin";
 }
 
@@ -1748,7 +1754,7 @@ Animations
 .make-merchandising .left-container {
     flex: 1;
     height: 480px;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
 }
 
 .make-merchandising .right-container {
@@ -1786,7 +1792,7 @@ Animations
 
 .make-merchandising input,
 .make-merchandising textarea {
-    background-color: #eee;
+    background-color: var(--color-eee);
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
@@ -1798,14 +1804,14 @@ Animations
 
 .make-merchandising input:focus,
 .make-merchandising textarea:focus {
-    outline: 1px solid #457aff;
+    outline: 1px solid var(--sky-blue);
 }
 
 .make-merchandising button {
     border-radius: 20px;
-    border: 1px solid #457aff;
-    background-color: #457aff;
-    color: #FFFFFF;
+    border: 1px solid var(--sky-blue);
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 13px;
     font-family: "Medium";
     padding: 12px 55px;
@@ -1851,17 +1857,11 @@ Animations
     display: none;
 }
 
-
-/* .make-merchandising end */
-
-
-/* get-started start  */
-
 .get-started {
     width: 100%;
     height: 100%;
     padding: 50px 0;
-    background-color: #d6d6e7;
+    background-color: var(--color-based);
 }
 
 .get-started .content {
@@ -1903,7 +1903,7 @@ Animations
 }
 
 .get-started .row .col .paragraph h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-size: 16px;
     font-family: "Thin";
     text-align: center;
@@ -1915,8 +1915,8 @@ Animations
 }
 
 .get-started .row .col .btn button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -1925,12 +1925,6 @@ Animations
     border: none;
     border-radius: 6px;
 }
-
-
-/* get-started end  */
-
-
-/* footer start  */
 
 .footer {
     background-color: rgb(0 0 51);
@@ -1956,13 +1950,13 @@ Animations
     text-decoration: none;
     font-family: "Thin";
     font-size: 18px;
-    color: #484c7a;
+    color: var(--paragraph-color);
     cursor: pointer;
     width: max-content;
 }
 
 .footer .row .col a:hover {
-    color: #fff;
+    color: var(--main-color);
     transition: 0.3s ease-in;
 }
 
@@ -1974,7 +1968,7 @@ Animations
 .footer .text h3 {
     font-family: "Thin";
     width: max-content;
-    color: #484c7a;
+    color: var(--paragraph-color);
     text-align: end;
     font-size: 18px;
     cursor: pointer;
@@ -1982,7 +1976,7 @@ Animations
 
 .footer .text h3:hover {
     transition: 0.3s ease-in;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .footer .flex {
@@ -2004,11 +1998,11 @@ Animations
 }
 
 .footer .rights-reserved h2 {
-    color: #fff;
+    color: var(--main-color);
     font-size: 16px;
     padding: 25px 0;
     font-family: "Thin";
-    border-top: 1px solid #484c7a;
+    border-top: 1px solid var(--paragraph-color);
 }
 
 @media only screen and (max-width: 767px) {

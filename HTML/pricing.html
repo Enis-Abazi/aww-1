@@ -13,9 +13,12 @@
 <body>
     <aside class="_social-links">
         <ul class="_links-list">
-            <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a></li>
+            <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a></li>
+            <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></li>
+            <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i
+                        class="fa-solid fa-at"></i></a></li>
         </ul>
     </aside>
     <section class="banner">
@@ -27,34 +30,31 @@
                     </div>
                     <div class="col">
                         <ul class="navbar">
-                            <li><a href="../HTML/services.html">Services</a></li>
+                            <li><a href="../HTML/index.html">Home</a></li>
                             <li><a href="../HTML/about.html">About Us</a></li>
-                            <li><a href="../HTML/pricing.html">Pricing</a></li>
+                            <li><a href="../HTML/services.html">Services</a></li>
 
                             <li><a href="../HTML/contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col">
-                        <a href="#">
+                        <a href="../HTML/pricing.html">
                             <button class="get-started-btn">Get started</button>
                         </a>
                     </div>
-                    <!-- animation header  -->
                     <div class="animationMenu">
                         <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
                         <label for="menu-icon"></label>
                         <nav class="nav">
                             <ul class="pt-5">
-                                <li><a href="../HTML/services">Services</a></li>
+                                <li><a href="../HTML/index.html">Home</a></li>
                                 <li><a href="../HTML/about.html">About Us</a></li>
-                                <li><a href="./pricing.html">Pricing</a></li>
-
+                                <li><a href="./services.html">Services</a></li>
                                 <li><a href="../HTML/contact.html">Contact Us</a></li>
                             </ul>
                         </nav>
 
                     </div>
-                    <!-- animation header  -->
                 </div>
             </div>
         </header>
@@ -83,7 +83,51 @@
                         <h3>Free</h3>
                     </div>
                     <div class="btn">
-                        <button>Get started</button>
+                        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+                        <label for="modal-btn">Get Started</label>
+                        <div class="modal">
+                            <div class="modal-wrap">
+                                <div class="form-row">
+                                    <form>
+                                        <input id="fname" type="text" placeholder="First Name" required>
+                                        <input id="lastname" type="text" placeholder="Last Name" required>
+                                        <input id="email" type="email" placeholder="Email Address" required>
+                                        <select name="plan" id="planSelect">
+                                            <option value="" disabled selected>Select Plan</option>
+                                            <option value="free">Free</option>
+                                            <option value="free-pay-as-you-go">Free/pay-as-you-go</option>
+                                            <option value="annualPlan">Annual Plan</option>
+                                            <option value="annualPlanPremium">Annual Plan Premium</option>
+                                        </select>
+                                        <div class="freePlanSelection">
+                                            <input id="projectNameFree" type="text" placeholder="Project Name" required>
+                                            <button id="sendRequestFreePlan">Request</button>
+                                        </div>
+                                        <br>
+                                        <div class="annualPlanSelection">
+                                            <input id="projectNameAnnual" type="text" placeholder="Project Name" required>
+                                            <select name="design" id="customDesign">
+                                                <option value="" disabled selected>Custom Design</option>
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                            <select name="hosting" id="hosting">
+                                                <option value="" disabled selected>Hosting</option>
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                            <select name="time" id="est">
+                                                <option value="" disabled selected>Estimate Time</option>
+                                                <option value="short">3-5</option>
+                                                <option value="medium">5-8</option>
+                                                <option value="high">8 and higher</option>
+                                            </select>
+                                            <button id="sendRequestAnnualPlan">Request</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="info">
                         <p><i class="check-icon-build fa-solid fa-check"></i> Free 1 Website for everyone</p>
@@ -107,7 +151,8 @@
                         <h3>Free/pay-as-you-go</h3>
                     </div>
                     <div class="btn">
-                        <button>Get started</button>
+                        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+                        <label for="modal-btn">Get Started</label>
                     </div>
                     <div class="info">
                         <p><i class="check-icon-grow fa-solid fa-check"></i> Free up to 2-3 pages</p>
@@ -132,7 +177,8 @@
                         <h3>Annual Plan</h3>
                     </div>
                     <div class="btn">
-                        <button>Request pricing</button>
+                        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+                        <label for="modal-btn">Request Pricing</label>
                     </div>
                     <div class="info">
                         <p><i class="check-icon-premium fa-solid fa-check"></i> Site within 24 hours</p>
@@ -155,7 +201,8 @@
                         <h3>Annual Plan</h3>
                     </div>
                     <div class="btn">
-                        <button>Request pricing</button>
+                        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+                        <label for="modal-btn">Request Pricing</label>
                     </div>
                     <div class="info">
                         <p><i class="check-icon-elevate fa-solid fa-check"></i> Everything premium</p>
@@ -179,7 +226,7 @@
                     <p>Free</p>
                 </div>
                 <div class="btn">
-                    <button>Get started</button>
+                    <button id="get-started-button">Get started</button>
                 </div>
                 <div class="straight-line-container">
                     <div class="straight-line straight-line-purple"></div>

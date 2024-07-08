@@ -1,122 +1,181 @@
 *,
 *::before,
 *::after {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  background: linear-gradient(to right, blue, green);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #fff;
 }
+
 ul,
 ol {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-.section-cookie {
-  padding: 10px 30px;
-  display: block;
-  text-align: center;
-  width: 600px;
-  border: 1px solid #0b0b0b;
-  border-radius: 5px;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.75%);
-  margin: 15px 0 0 25px;
+
+.container .icon {
+    position: relative;
+    left: 33.3%;
+    overflow: hidden;
+    padding: 5px 0;
+    bottom: 15px;
 }
-.section-cookie h3 {
-  font-family: sans-serif;
-  color: #0b0b0b;
-  font-size: 18px;
-  font-weight: 300;
+
+.container .layout {
+    padding: 30px 60px 60px;
+    background-color: #fff;
+    width: max-content;
+    left: 33%;
+    border-radius: 20px;
+    position: relative;
 }
-.section-cookie .row {
-  display: flex;
-  justify-content: end;
-  column-gap: 20px;
-  padding: 10px;
-  margin: 5px;
+
+.container .layout .container-layout .content {
+    text-align: center;
 }
-.section-cookie .row .col .adj-settings-cookies {
-  width: 150px;
-  padding: 10px 14px;
-  border: 1px solid blue;
-  border-radius: 2px;
-  font-size: 13px;
-  cursor: pointer;
-  outline: none;
-  color: blue;
-  text-align: center;
-  background-color: white;
+
+.container .layout .container-layout .content h1 {
+    color: #353746;
+    font-family: sans-serif;
+    font-weight: 300;
 }
-.section-cookie .row .col .accept-btn-cookies {
-  width: 100px;
-  padding: 10px 14px;
-  border: 1px solid blue;
-  border-radius: 2px;
-  font-size: 13px;
-  cursor: pointer;
-  outline: none;
-  color: whitesmoke;
-  background-color: blue;
-  text-align: center;
+
+.container .layout .container-layout .info {
+    text-align: center;
 }
-.input-mic {
-  display: block;
-  text-align: center;
-  margin: 30px 0;
+
+.container .layout .container-layout .info h4 {
+    color: #484C7A;
+    margin: 0 auto;
+    padding: 5px 0;
+    font-family: sans-serif;
+    font-weight: 300;
 }
-.input-mic .text {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  position: absolute;
-  left: 38%;
-  padding: 5px 0;
-  border-radius: 50px;
-  height: 50px;
-  overflow: hidden;
+
+.container {
+    width: 100%;
+    padding: 315px 0;
+    background-image: url(./6847186.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.input-mic .text h2 {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  font-size: 19px;
-  right: 55px;
-  top: -2px;
-  color: white;
-  font-family: sans-serif;
-  cursor: none;
+
+@media only screen and (min-width:401px) and (max-width:650px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container .layout {
+        position: relative;
+        left: -78px;
+        bottom: 0px;
+        padding: 28px 37px 57px;
+    }
+    .container {
+        padding: 100px;
+    }
+    .container .icon {
+        padding: 5px 0;
+    }
 }
-.input-mic .text img {
-  height: 30px;
-  position: relative;
-  left: 50px;
-  top: 9px;
-  fill: white;
-  filter: invert(1);
+
+@media only screen and (min-width:651px) and (max-width: 767px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        padding: 379px;
+    }
+    .container .layout {
+        position: relative;
+        left: -259px;
+        bottom: 120px;
+    }
+    .container .icon {
+        padding: 5px 0;
+    }
+    .container .layout .container-layout .content {
+        padding: 10px 0;
+    }
 }
-li {
-  font-size: 17px;
-  background-color: black;
-  width: max-content;
-  padding: 10px;
-  color: white;
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        padding: 379px;
+    }
+    .container .layout {
+        position: relative;
+        left: -203px;
+    }
+    .container .icon {
+        padding: 5px 0;
+    }
+    .container .layout .container-layout .content {
+        padding: 10px 0;
+    }
 }
-.p:hover .m {
-  display: block;
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 }
-.m {
-  display: none;
-}
-.p-c {
-  text-align: start;
-  position: relative;
-  right: 50px;
+
+@media only screen and (min-width: 1440px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 }

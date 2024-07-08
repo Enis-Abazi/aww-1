@@ -6,6 +6,34 @@
     margin: 0;
 }
 
+:root {
+    --sky-blue: #457aff;
+    --font-color: #353746;
+    --paragraph-color: #484C7A;
+    --main-color: #fff;
+    --bg-color: #f5f5fa;
+    --scrollbar-track-color: #f1f1f1;
+    --scrollbar-thumb: #888;
+    --scrolbar-thumb-hover: #555;
+    --black-color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrolbar-thumb-hover);
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -51,13 +79,13 @@ aside {
     padding: 1em 0.5em 1em 1em;
     background: #fafafa;
     border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px #457aff;
+    box-shadow: -4px 0px 0px var(--sky-blue);
     transition: all 300ms ease;
     z-index: 10;
 }
 
 ._social-links:hover {
-    box-shadow: -8px 0px 20px #457aff;
+    box-shadow: -8px 0px 20px var(--sky-blue);
     padding: 1em;
 }
 
@@ -79,7 +107,7 @@ aside {
 }
 
 ._social-link a:hover {
-    color: #457aff;
+    color: var(--sky-blue);
     font-size: 1.75rem;
 }
 
@@ -186,7 +214,7 @@ aside {
     z-index: 9;
     overflow: hidden;
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-    background-color: #457aff;
+    background-color: var(--sky-blue);
     animation: border-transform 7s linear infinite;
     transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -288,7 +316,7 @@ aside {
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 
 .nav ul li a:after {
@@ -300,7 +328,7 @@ aside {
     margin-top: -1vh;
     width: 0;
     left: 0;
-    background-color: #353746;
+    background-color: var(--font-color);
     opacity: 0.8;
     transition: width 250ms linear;
 }
@@ -342,7 +370,7 @@ aside {
 
 header {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--main-color);
     /* background-color: #000033; */
     position: fixed;
     border-bottom: 1px solid #84858e;
@@ -369,7 +397,7 @@ header .row {
 
 header .row .col {
     position: relative;
-    color: #fff;
+    color: var(--main-color);
 }
 
 header .row .col img {
@@ -377,7 +405,7 @@ header .row .col img {
     overflow: hidden;
     position: relative;
     left: 15px;
-    filter: opacity(1) drop-shadow(0 0 0 #457aff);
+    filter: opacity(1) drop-shadow(0 0 0 var(--sky-blue));
 }
 
 header .row .col .navbar {
@@ -390,7 +418,7 @@ header .row .col .navbar li a {
     font-size: 12px;
     cursor: pointer;
     font-family: "Medium";
-    color: #353746;
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -399,8 +427,8 @@ header .row .col a {
 }
 
 header .row .col button {
-    background-color: #457aff;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--main-color);
     font-size: 12px;
     outline: none;
     cursor: pointer;
@@ -413,7 +441,7 @@ header .row .col button {
 .container {
     width: 100%;
     padding: 219px 0 90px 0;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .container .contentText {
@@ -421,7 +449,7 @@ header .row .col button {
 }
 
 .container .contentText h1 {
-    color: #353746;
+    color: var(--font-color);
     font-family: "Medium";
     font-size: 40px;
 }
@@ -432,14 +460,14 @@ header .row .col button {
 }
 
 .container .content h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-family: "Thin";
     padding: 5px 0;
 }
 
 .banner {
     width: 100%;
-    background-color: #f5f5fa;
+    background-color: var(--bg-color);
     padding: 50px 0;
 }
 
@@ -448,7 +476,7 @@ header .row .col button {
 }
 
 .banner .contentText h1 {
-    color: #353746;
+    color: var(--font-color);
     font-family: "Medium";
     font-size: 40px;
 }
@@ -459,7 +487,7 @@ header .row .col button {
 }
 
 .banner .content h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     padding: 5px 0;
     font-family: 'Thin';
 }
@@ -470,7 +498,7 @@ header .row .col button {
 }
 
 .banner .info h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-family: 'Thin';
 }
 
@@ -485,7 +513,7 @@ header .row .col button {
 .banner .row .col {
     flex-basis: 50%;
     position: relative;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
     border-radius: 20px;
     padding: 50px 26px;
     overflow: hidden;
@@ -497,18 +525,18 @@ header .row .col button {
 }
 
 .banner .row .col .information h2 {
-    color: #fff;
+    color: var(--main-color);
     font-family: "Medium";
 }
 
 .banner .row .col .text p {
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     padding: 3px 0;
 }
 
 .banner .row .col .document p {
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     padding: 3px 0;
 }
@@ -516,7 +544,7 @@ header .row .col button {
 .container-layout {
     width: 100%;
     padding: 50px 0;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .container-layout .contentText {
@@ -524,7 +552,7 @@ header .row .col button {
 }
 
 .container-layout .contentText h1 {
-    color: #353746;
+    color: var(--font-color);
     font-family: "Medium";
     font-size: 40px;
 }
@@ -535,7 +563,7 @@ header .row .col button {
 }
 
 .container-layout .info h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-family: "Thin";
 }
 
@@ -563,13 +591,13 @@ header .row .col button {
 }
 
 .container-layout .row .col .content h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-family: "Thin";
     font-size: 16px;
 }
 
 .container-layout .row .col .text h1 {
-    color: #353746;
+    color: var(--font-color);
     font-family: "Medium";
     font-size: 25px;
 }
@@ -577,7 +605,7 @@ header .row .col button {
 .banner-layout {
     width: 100%;
     padding: 50px 0;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .banner-layout .row {
@@ -591,9 +619,19 @@ header .row .col button {
     flex-basis: 50%;
     position: relative;
     padding: 50px 50px;
-    background-color: #457aff;
+    background-color: var(--sky-blue);
     aspect-ratio: 7/8;
     overflow: hidden;
+}
+
+.banner-layout .row .col:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.banner-layout .row .col:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .banner-layout .row .col .contentText {
@@ -601,13 +639,13 @@ header .row .col button {
 }
 
 .banner-layout .row .col .contentText h1 {
-    color: #fff;
+    color: var(--main-color);
     font-size: 40px;
     font-family: "Medium";
 }
 
 .banner-layout .row .col .info h3 {
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     font-size: 15px;
     padding: 5px 0;
@@ -627,7 +665,7 @@ header .row .col button {
 .last-section {
     width: 100%;
     padding: 50px 0;
-    background-color: #f5f5fa;
+    background-color: var(--bg-color);
 }
 
 .last-section .contentText {
@@ -646,7 +684,7 @@ header .row .col button {
 }
 
 .last-section .info h3 {
-    color: #484c7a;
+    color: var(--paragraph-color);
     font-family: "Thin";
 }
 
@@ -657,13 +695,13 @@ header .row .col button {
 
 .last-section .btn button a {
     text-align: none;
-    color: #fff;
+    color: var(--main-color);
     font-family: "Medium";
     font-size: 12px;
 }
 
 .last-section .btn button {
-    background-color: #457aff;
+    background-color: var(--sky-blue);
     outline: none;
     cursor: pointer;
     width: 170px;
@@ -699,7 +737,7 @@ header .row .col button {
 }
 
 .last .row .col .contentText h1 {
-    color: #fff;
+    color: var(--main-color);
     font-family: "Thin";
     font-size: 45px;
 }
@@ -725,10 +763,10 @@ header .row .col button {
     outline: none;
     width: 130px;
     padding: 15px;
-    border: 2px solid #fff;
+    border: 2px solid var(--main-color);
     border-radius: 6px;
     cursor: pointer;
-    color: #fff;
+    color: var(--main-color);
     font-family: "Medium";
 }
 
@@ -755,14 +793,14 @@ header .row .col button {
 .footer .row .col h3 a {
     font-family: "Thin";
     width: max-content;
-    color: #484c7a;
+    color: var(--paragraph-color);
     text-align: end;
     font-size: 18px;
     cursor: pointer;
 }
 
 .footer .row .col h3 a:hover {
-    color: #fff;
+    color: var(--main-color);
     transition: 0.3s ease-in;
 }
 
@@ -774,7 +812,7 @@ header .row .col button {
 .footer .text h3 {
     font-family: "Thin";
     width: max-content;
-    color: #484c7a;
+    color: var(--paragraph-color);
     text-align: end;
     font-size: 18px;
     cursor: pointer;
@@ -782,7 +820,7 @@ header .row .col button {
 
 .footer .text h3:hover {
     transition: 0.3s ease-in;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .footer .flex {
@@ -804,11 +842,11 @@ header .row .col button {
 }
 
 .footer .rights-reserved h2 {
-    color: #fff;
+    color: var(--main-color);
     font-size: 16px;
     padding: 25px 0;
     font-family: "Thin";
-    border-top: 1px solid #484c7a;
+    border-top: 1px solid var(--paragraph-color);
 }
 
 .last .row .col .contentText h1 {
@@ -881,6 +919,18 @@ header .row .col button {
     }
     .banner-layout .row .col {
         width: 100%;
+        position: relative;
+        top: 2px;
+    }
+    .banner-layout .row .col:first-child {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .banner-layout .row .col:last-child {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .last .row .col .contentText h1 {
         font-size: 26px;

@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="../Style/contact.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
     <link rel="icon" href="../Images/Abaziwebwork black.png" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('i06eE0V2pBgApwM3n')
+    </script>
 </head>
 
 <body>
     <aside class="_social-links">
         <ul class="_links-list">
-            <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a></li>
+            <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a></li>
+            <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></li>
+            <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i
+                        class="fa-solid fa-at"></i></a></li>
         </ul>
     </aside>
     <section class="container">
@@ -27,34 +35,30 @@
                     </div>
                     <div class="col">
                         <ul class="navbar">
-                            <li><a href="../HTML/services.html">Services</a></li>
+                            <li><a href="../HTML/index.html">Home</a></li>
                             <li><a href="../HTML/about.html">About Us</a></li>
                             <li><a href="../HTML/pricing.html">Pricing</a></li>
-
-                            <li><a href="../HTML/contact.html">Contact Us</a></li>
+                            <li><a href="../HTML/services.html">Services</a></li>
                         </ul>
                     </div>
                     <div class="col">
-                        <a href="#">
+                        <a href="../HTML/pricing.html">
                             <button class="get-started-btn">Get started</button>
                         </a>
                     </div>
-                    <!-- animation header  -->
                     <div class="animationMenu">
                         <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
                         <label for="menu-icon"></label>
                         <nav class="nav">
                             <ul class="pt-5">
-                                <li><a href="../HTML/services.html">Services</a></li>
+                                <li><a href="../HTML/index.html">Home</a></li>
                                 <li><a href="../HTML/about.html">About Us</a></li>
                                 <li><a href="./pricing.html">Pricing</a></li>
-
-                                <li><a href="../HTML/contact.html">Contact Us</a></li>
+                                <li><a href="../HTML/services.html">Services</a></li>
                             </ul>
                         </nav>
 
                     </div>
-                    <!-- animation header  -->
                 </div>
             </div>
         </header>
@@ -65,7 +69,6 @@
             <h2>Request support, chat with our team, or get pricing.</h2>
         </div>
     </section>
-
     <section class="banner">
         <div class="row">
             <div class="col">
@@ -171,6 +174,44 @@
             </div>
         </div>
     </section>
+    <section class="make-merchandising">
+        <div class="containerr">
+            <div class="form-container">
+                <div class="left-container">
+                    <div class="left-inner-container">
+                        <h2>Let's Chat</h2>
+                        <br>
+                        <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                        <br>
+                        <p>Feel free to send me a message in the contact form</p>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="right-inner-container">
+                        <form id="myForm">
+                            <h2 class="lg-view">Just say Hello !</h2>
+                            <p class="sm-view">Let us know more about you !</p>
+                            <input name="from_name" id="from_name" placeholder="First Name" required />
+                            <input id="lastName" type="text" name="lastName" placeholder="Last Name" required />
+                            <input name="email_id" id="email_id" placeholder="eg. example@gmail.com" required />
+                            <input id="number_id" type="number" name="number_id" placeholder="Phone (Optional)" />
+                            <textarea rows="4" name="message" id="message" placeholder="Message" required></textarea>
+                            <button type="submit" id="buttonMail">Submit</button>
+                            <h3 class="errorSent">Failed to sent email</h3>
+                        </form>
+                        <div class="succesSent">
+
+                            <img src="../Images/Animation - 1719675760220.gif" alt="">
+                            <audio controls autoplay>
+                                <source src="../Images/level-up-191997.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
     <section class="last">
         <div class="row">
             <div class="col">
@@ -187,7 +228,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer-top">
             <div class="row">
@@ -212,7 +252,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="../Script/contact.js"></script>
 </body>
 
 </html>
