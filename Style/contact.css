@@ -992,6 +992,9 @@ header .row .col button {
         justify-content: start;
         align-items: start;
     }
+    .last .row .col .contentText h1 {
+        font-size: 20px;
+    }
     .container .contentText {
         font-size: 20px;
     }
@@ -1070,6 +1073,9 @@ header .row .col button {
     }
     .last {
         padding: 60px 0 68px 0;
+    }
+    .last .row .col .contentText h1 {
+        font-size: 20px;
     }
     .banner .row .col {
         width: 100%;
