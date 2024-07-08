@@ -138,11 +138,11 @@ a {
         box-sizing: border-box;
     }
     .container {
-        padding: 379px;
+        padding: 800px;
     }
     .container .layout {
         position: relative;
-        left: -203px;
+        left: -600px;
     }
     .container .icon {
         padding: 5px 0;

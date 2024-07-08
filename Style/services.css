@@ -876,6 +876,10 @@ header .row .col button {
     .footer .text {
         display: none;
     }
+    .banner .row .col {
+        height: 100%;
+        aspect-ratio: 0/0;
+    }
     aside,
     .animationMenu {
         display: block;
@@ -904,12 +908,19 @@ header .row .col button {
     .container-layout .row {
         flex-direction: column;
         row-gap: 20px;
+        padding: 20px;
     }
     .container-layout .row .col .img {
         padding: 20px 0;
     }
     .container-layout .row .col .img img {
-        width: 60%;
+        width: 100%;
+    }
+    .banner-layout .row .col {
+        aspect-ratio: 0/0;
+        height: 100%;
+        position: relative;
+        top: 6px;
     }
     .container-layout .row .col {
         width: 100%;
@@ -917,10 +928,27 @@ header .row .col button {
     .banner-layout .row {
         flex-direction: column;
     }
-    .banner-layout .row .col {
-        width: 100%;
-        position: relative;
-        top: 2px;
+    .banner-layout .row .col .contentText h1 {
+        font-size: 30px;
+    }
+    .last .row .col .contentText h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer {
+        padding: 0;
+    }
+    .footer .footer-top .row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+    }
+    .last .row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
     }
     .banner-layout .row .col:first-child {
         border-radius: 0;
@@ -931,9 +959,6 @@ header .row .col button {
         border-radius: 0;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-    .last .row .col .contentText h1 {
-        font-size: 26px;
     }
 }
 

@@ -992,6 +992,9 @@ header .row .col button {
         justify-content: start;
         align-items: start;
     }
+    .last .row .col .contentText h1 {
+        font-size: 20px;
+    }
     .container .contentText {
         font-size: 20px;
     }
@@ -1037,6 +1040,17 @@ header .row .col button {
         flex-direction: column;
         padding: 0;
     }
+    .make-merchandising {
+        padding: 0;
+    }
+    .make-merchandising .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .make-merchandising .form-container {
+        flex-direction: column;
+        display: block;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1059,6 +1073,9 @@ header .row .col button {
     }
     .last {
         padding: 60px 0 68px 0;
+    }
+    .last .row .col .contentText h1 {
+        font-size: 20px;
     }
     .banner .row .col {
         width: 100%;
@@ -1100,6 +1117,13 @@ header .row .col button {
     }
     .last .row .col .contentText h1 {
         font-size: 31px;
+    }
+    .make-merchandising {
+        padding: 50px 20px;
+    }
+    .make-merchandising .row {
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
 

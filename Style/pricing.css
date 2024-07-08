@@ -1244,6 +1244,12 @@ select {
     .last {
         padding: 20px;
     }
+    .second-container .row .col {
+        aspect-ratio: 0/0;
+    }
+    .second-container .row .col .info p {
+        text-align: start;
+    }
     .last .row {
         flex-direction: column;
         row-gap: 20px;
@@ -1254,11 +1260,17 @@ select {
     .footer .footer-top {
         padding: 20px 40px;
     }
+    .last .row .col .contentText h1 {
+        font-size: 21px;
+    }
     .footer .row {
         flex-direction: column;
         row-gap: 20px;
         justify-content: start;
         align-items: start;
+    }
+    .add-ons .btn {
+        padding: 20px;
     }
 }
 
@@ -1318,6 +1330,12 @@ select {
     }
     .detailed {
         padding: 90px 0 0 0;
+    }
+    .second-container .row .col .info p {
+        text-align: start;
+    }
+    .second-container .row .col {
+        aspect-ratio: 0/0;
     }
     .detailed .row {
         flex-direction: column;

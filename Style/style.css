@@ -2017,6 +2017,9 @@ header .row .col button {
         margin: 0;
         box-sizing: border-box;
     }
+    .banner .row .col .title h1 {
+        font-size: 35px;
+    }
     aside,
     .animationMenu {
         display: block;
@@ -2038,7 +2041,10 @@ header .row .col button {
         text-align: center;
     }
     .choose-us {
-        padding: 50px 20px;
+        padding: 20px;
+    }
+    .choose-us .container {
+        padding: 0;
     }
     .choose-us .row {
         flex-direction: column;
@@ -2204,8 +2210,11 @@ header .row .col button {
     .banner .row {
         justify-content: center;
     }
-    .banner .container {
-        padding: 50px;
+    .choose-us .container {
+        padding: 20px;
+    }
+    .banner .row .col .title h1 {
+        font-size: 36px;
     }
     .banner .col-bg,
     .banner .row .animation-text,
