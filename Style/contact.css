@@ -21,6 +21,7 @@ body {
     --scrollbar-thumb: #888;
     --scrolbar-thumb-hover: #555;
     --bg-random: #ececee;
+    --color-eee: #eee;
 }
 
 ::-webkit-scrollbar {
