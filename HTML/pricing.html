@@ -90,8 +90,11 @@
                                 <div class="form-row">
                                     <form>
                                         <input id="fname" type="text" placeholder="First Name" required>
+                                        <p id="invalidName">Fill the name</p>
                                         <input id="lastname" type="text" placeholder="Last Name" required>
+                                        <p id="invalidLastname">Fill the last name</p>
                                         <input id="email" type="email" placeholder="Email Address" required>
+                                        <p id="invalidEmail">Fill the email address</p>
                                         <select name="plan" id="planSelect">
                                             <option value="" disabled selected>Select Plan</option>
                                             <option value="free">Free</option>
@@ -101,27 +104,32 @@
                                         </select>
                                         <div class="freePlanSelection">
                                             <input id="projectNameFree" type="text" placeholder="Project Name" required>
+                                            <p id="validateProjectNameFree">Fill the project name</p>
                                             <button id="sendRequestFreePlan">Request</button>
                                         </div>
                                         <br>
                                         <div class="annualPlanSelection">
                                             <input id="projectNameAnnual" type="text" placeholder="Project Name" required>
+                                            <p id="validateProjectName">Fill the project name</p>
                                             <select name="design" id="customDesign">
                                                 <option value="" disabled selected>Custom Design</option>
                                                 <option value="yes">Yes</option>
                                                 <option value="no">No</option>
                                             </select>
+                                            <p id="validateDesign">Please Select Custom Design</p>
                                             <select name="hosting" id="hosting">
                                                 <option value="" disabled selected>Hosting</option>
                                                 <option value="yes">Yes</option>
                                                 <option value="no">No</option>
                                             </select>
+                                            <p id="validateHosting">Please Select Hosting</p>
                                             <select name="time" id="est">
                                                 <option value="" disabled selected>Estimate Time</option>
-                                                <option value="short">3-5</option>
-                                                <option value="medium">5-8</option>
-                                                <option value="high">8 and higher</option>
+                                                <option value="3-5">3-5 days</option>
+                                                <option value="5-8">5-8 days</option>
+                                                <option value="8 and higher">8 and higher</option>
                                             </select>
+                                            <p id="validateEst">Please Select Estimated Date</p>
                                             <button id="sendRequestAnnualPlan">Request</button>
                                         </div>
                                     </form>
@@ -181,7 +189,7 @@
                         <label for="modal-btn">Request Pricing</label>
                     </div>
                     <div class="info">
-                        <p><i class="check-icon-premium fa-solid fa-check"></i> Site within 24 hours</p>
+                        <p><i class="check-icon-premium fa-solid fa-check"></i> Site within 96 hours</p>
                         <p><i class="check-icon-premium fa-solid fa-check"></i> Futuristic</p>
                         <p><i class="check-icon-premium fa-solid fa-check"></i> AI included</p>
                     </div>
@@ -198,7 +206,7 @@
                         <h4>offering</h4>
                     </div>
                     <div class="free">
-                        <h3>Annual Plan</h3>
+                        <h3>Annual Plan Premium</h3>
                     </div>
                     <div class="btn">
                         <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
@@ -206,7 +214,7 @@
                     </div>
                     <div class="info">
                         <p><i class="check-icon-elevate fa-solid fa-check"></i> Everything premium</p>
-                        <p><i class="check-icon-elevate fa-solid fa-check"></i> Site within 24 hours and hosting</p>
+                        <p><i class="check-icon-elevate fa-solid fa-check"></i> Site within 48 hours and hosting</p>
                         <p><i class="check-icon-elevate fa-solid fa-check"></i> AI & AI images included</p>
                     </div>
                 </div>
@@ -416,6 +424,7 @@
         </div>
     </footer>
 
+    <script src="../Script/pricing.js"></script>
 </body>
 
 </html>

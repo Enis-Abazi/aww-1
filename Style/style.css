@@ -507,6 +507,10 @@ header .row .col button {
     padding: 20px 0;
 }
 
+.banner .row .col .get-started-button-title-div a {
+    color: #fff;
+}
+
 .banner .row .col .get-started-button-title-div {
     background-color: var(--sky-blue);
     color: var(--main-color);
@@ -708,6 +712,10 @@ header .row .col button {
 
 .choose-us .row .col .learn-more-btn-div {
     padding: 20px 0;
+}
+
+.choose-us .row .col .learn-more-btn-div button a {
+    color: #fff;
 }
 
 .choose-us .row .col .learn-more-btn-div button {
@@ -946,6 +954,10 @@ header .row .col button {
     text-align: center;
 }
 
+.scaling-works-ahead .btn button a {
+    color: #fff;
+}
+
 .scaling-works-ahead .btn button {
     background-color: var(--sky-blue);
     color: var(--main-color);
@@ -997,6 +1009,10 @@ header .row .col button {
     font-family: "Thin";
     font-weight: 1000;
     color: var(--paragraph-color);
+}
+
+.how-it-works .row .col button a {
+    color: #fff;
 }
 
 .how-it-works .row .col button {
@@ -1421,6 +1437,10 @@ header .row .col button {
 .start-your-project .btn {
     padding: 10px;
     text-align: center;
+}
+
+.start-your-project .btn button a {
+    color: #fff;
 }
 
 .start-your-project .btn button {
@@ -1912,6 +1932,10 @@ header .row .col button {
 .get-started .row .col .btn {
     padding: 20px 15px;
     text-align: center;
+}
+
+.get-started .row .col .btn button a {
+    color: #fff;
 }
 
 .get-started .row .col .btn button {
