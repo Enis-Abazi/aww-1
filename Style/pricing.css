@@ -41,7 +41,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--scrolbar-thumb-hover);
+    background: var(--scrollbar-thumb-hover);
 }
 
 ol,
@@ -489,28 +489,28 @@ header .row .col button {
 }
 
 .second-container .row .col .line-build {
-    border-top: 6px solid var(--purple-color);
+    border-top: 10px solid var(--purple-color);
     position: relative;
     bottom: 50px;
     border-radius: 5px;
 }
 
 .second-container .row .col .line-grow {
-    border-top: 6px solid var(--green-color);
+    border-top: 10px solid var(--green-color);
     position: relative;
     bottom: 50px;
     border-radius: 5px;
 }
 
 .second-container .row .col .line-premium {
-    border-top: 6px solid var(--orange-color);
+    border-top: 10px solid var(--orange-color);
     position: relative;
     bottom: 50px;
     border-radius: 5px;
 }
 
 .second-container .row .col .line-elevate {
-    border-top: 6px solid var(--red-color);
+    border-top: 10px solid var(--red-color);
     position: relative;
     bottom: 50px;
     border-radius: 5px;
@@ -627,7 +627,7 @@ header .row .col button {
 }
 
 .second-container .row .col .info .check-icon-premium {
-    color: var(--var(--orange-color)-color);
+    color: var(--orange-color);
     font-size: 17px;
     position: relative;
     top: 4px;
@@ -842,11 +842,26 @@ header .row .col button {
 }
 
 .freePlanSelection {
-    display: none !important;
+    display: none;
 }
 
 .annualPlanSelection {
     display: none;
+}
+
+#invalidName,
+#invalidLastname,
+#invalidEmail,
+#validateDesign,
+#validateHosting,
+#validateEst,
+#validateProjectName,
+#validateProjectNameFree {
+    padding: 0;
+    color: rgb(185, 17, 17);
+    text-align: start;
+    font-size: 14px;
+    font-family: "Medium";
 }
 
 .form-row form input,

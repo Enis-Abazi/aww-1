@@ -37,7 +37,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--scrolbar-thumb-hover);
+    background: var(--scrollbar-thumb-hover);
 }
 
 ol,
