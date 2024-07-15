@@ -616,118 +616,213 @@ header .row .col button {
     padding: 50px;
 }
 
-.banner .row-flex {
-    display: flex;
-    position: absolute;
-    z-index: 4;
-    align-items: center;
-    column-gap: 20px;
-    justify-content: end;
-    bottom: 50px;
-    right: 110px;
-}
-
-.banner .row-flex .col-flex {
-    flex-basis: 18%;
-    position: relative;
-    border: 3px solid var(--sky-blue);
-    border-radius: 15px;
-    background: var(--main-color);
-    animation: flash 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-}
-
-.banner .row-flex .col-flex img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
 .choose-us {
     background: var(--main-color);
-}
-
-.choose-us .container {
-    padding: 50px;
-}
-
-.choose-us h1 {
-    text-align: center;
-    font-size: 25px;
-    color: var(--var(--second-afric-color)-color);
-    font-family: "Bold";
 }
 
 .choose-us .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     column-gap: 20px;
-    padding: 10px;
+    padding: 50px 80px;
 }
 
 .choose-us .row .col {
-    flex-basis: 50%;
+    flex-basis: 33%;
     position: relative;
+    overflow: hidden;
+    padding: 35px;
 }
 
-.choose-us .row .col h2 {
-    font-size: 20px;
-    font-family: "Medium";
-    color: var(--var(--second-afric-color)-color);
-    padding: 20px 0;
+.choose-us .row .col .content h4 {
+    color: var(--sky-blue);
+    font-family: "Thin";
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
-.choose-us .row .col h3 {
-    font-size: 13px;
+.choose-us .row .col .contentText {
+    width: max-content;
+}
+
+.choose-us .row .col .contentText h1 {
+    color: var(--sky-blue);
     font-family: "Medium";
-    color: var(--paragraph-color);
+    font-size: 25px;
     position: relative;
-    line-height: 35px;
+    padding: 30px 0;
+    overflow: hidden;
 }
 
-.choose-us .row .col h3::before {
-    content: " ";
+.choose-us .row .col .contentText h1::after {
     position: absolute;
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: var(--sky-blue);
     left: 0;
-    top: 75%;
-    transform: translateY(-50%);
-    width: 25px;
-    height: 1.5px;
-    border-radius: 10px;
-    background-color: var(--sky-blue);
+    bottom: 15px;
 }
 
-.choose-us .row .col p {
-    font-size: 12px;
-    font-family: "Medium";
-    color: var(--paragraph-color);
+.choose-us .row .col .text {
+    padding: 30px 0;
 }
 
-.choose-us .row .col img {
+.choose-us .row .col .contentText h1:hover::after {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    transition: 0.5s ease-in;
 }
 
-.choose-us .row .col .learn-more-btn-div {
-    padding: 20px 0;
+.choose-us .row .col .text p {
+    color: var(--sky-blue);
+    font-family: "Thin";
+    font-weight: 900;
+    padding: 3px 0;
 }
 
-.choose-us .row .col .learn-more-btn-div button a {
-    color: #fff;
+.choose-us .row .col .info {
+    padding: 56px 0;
+    position: relative;
 }
 
-.choose-us .row .col .learn-more-btn-div button {
-    background-color: var(--sky-blue);
-    color: var(--main-color);
-    font-size: 12px;
+.choose-us .row .col .info button {
+    width: 200px;
+    padding: 15px;
+    background-color: transparent;
     outline: none;
     cursor: pointer;
-    font-family: "Medium";
-    padding: 13px 16px;
     border: none;
-    border-radius: 6px;
+    position: relative;
+}
+
+.choose-us .row .col .info .before::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: var(--sky-blue);
+    left: 0;
+    top: 0;
+    transition: height 0.3s ease-in;
+}
+
+.choose-us .row .col .info button:hover .before::before {
+    height: 100%;
+}
+
+.choose-us .row .col .info .before::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--sky-blue);
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease-in;
+}
+
+.choose-us .row .col .info button:hover .before::after {
+    width: 100%;
+}
+
+.choose-us .row .col .info .after::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: var(--sky-blue);
+    right: 0;
+    bottom: 0;
+    transition: height 0.3s ease-in;
+}
+
+.choose-us .row .col .info button:hover .after::before {
+    height: 100%;
+}
+
+.choose-us .row .col .info .after::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--sky-blue);
+    right: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in;
+}
+
+.choose-us .row .col .info button:hover .after::after {
+    width: 100%;
+}
+
+.choose-us .row .col .info a {
+    color: var(--sky-blue);
+    font-family: "Medium";
+    font-size: 16px;
+}
+
+.choose-us .row .col .document {
+    padding: 23px 0;
+}
+
+.choose-us .row .col .document h1 {
+    color: var(--sky-blue);
+    font-family: "Medium";
+    font-size: 18px;
+}
+
+.choose-us .row .col .informations p {
+    padding: 3px 0;
+    color: var(--sky-blue);
+    font-family: "Thin";
+    font-weight: 900;
+}
+
+.choose-us .row .col .img {
+    padding: 10px 0;
+    width: 80px;
+    position: relative;
+    text-align: center;
+    overflow: visible;
+    z-index: 1;
+}
+
+.choose-us .row .col .img img {
+    width: 50px;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.choose-us .row .col .img::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--sky-blue);
+    content: "";
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.choose-us .row .col .img:hover::after {
+    transform: rotate(45deg);
+}
+
+.choose-us .row .col .flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.choose-us .row .col .flex .flex-col {
+    padding: 18px;
+    overflow: hidden;
 }
 
 @keyframes scroll {
@@ -740,7 +835,7 @@ header .row .col button {
 }
 
 .choose-us .slider {
-    background: white;
+    background: var(--main-color);
     height: 100%;
     margin: auto;
     overflow: hidden;
@@ -955,7 +1050,7 @@ header .row .col button {
 }
 
 .scaling-works-ahead .btn button a {
-    color: #fff;
+    color: var(--main-color);
 }
 
 .scaling-works-ahead .btn button {
@@ -1012,7 +1107,7 @@ header .row .col button {
 }
 
 .how-it-works .row .col button a {
-    color: #fff;
+    color: var(--main-color);
 }
 
 .how-it-works .row .col button {
@@ -1440,7 +1535,7 @@ header .row .col button {
 }
 
 .start-your-project .btn button a {
-    color: #fff;
+    color: var(--main-color);
 }
 
 .start-your-project .btn button {
@@ -1733,7 +1828,7 @@ header .row .col button {
 }
 
 .make-merchandising .containerr {
-    background-color: white;
+    background-color: var(--main-color);
     border-radius: 5px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -1781,7 +1876,7 @@ header .row .col button {
     display: flex;
     flex: 1;
     height: 100%;
-    background-color: white;
+    background-color: var(--main-color);
     justify-content: center;
     padding: 30px 0;
     align-items: center;
@@ -1794,7 +1889,7 @@ header .row .col button {
     height: 514px;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--main-color);
 }
 
 .make-merchandising .right-inner-container {
@@ -1935,7 +2030,7 @@ header .row .col button {
 }
 
 .get-started .row .col .btn button a {
-    color: #fff;
+    color: var(--main-color);
 }
 
 .get-started .row .col .btn button {
