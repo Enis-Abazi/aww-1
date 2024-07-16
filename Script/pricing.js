@@ -9,6 +9,8 @@ const requestFree = document.querySelector("#sendRequestFreePlan");
 // requestFree.disabled = true;
 // requestFree.style.cursor = 'not-allowed';
 
+const freePlanDisabled = [firstname, lastname, email, planSelect, projectNameFree];
+
 const annualPlanDiv = document.querySelector(".annualPlanSelection");
 const projectNameAnnual = document.querySelector("#projectNameAnnual");
 const customDesignSelect = document.querySelector("#customDesign");
@@ -17,6 +19,15 @@ const estimatedTimeSelect = document.querySelector("#est");
 const requestAnnual = document.querySelector("#sendRequestAnnualPlan");
 // requestAnnual.disabled = true;
 // requestAnnual.style.cursor = 'not-allowed';
+
+const annualPlanDisabled = [firstname, lastname, email, planSelect, projectNameAnnual, customDesignSelect, hostingSelect, estimatedTimeSelect];
+// annualPlanDisabled.forEach((e) => {
+//     e.disabled = true;
+//     e.style.filter = 'opacity(0.5)';
+//     requestAnnual.disabled = true;
+//     requestAnnual.style.filter = 'opacity(0.8)';
+//     requestAnnual.style.cursor = 'not-allowed';
+// })
 
 const invalidName = document.querySelector("#invalidName");
 const invalidLastname = document.querySelector("#invalidLastname");
@@ -36,6 +47,18 @@ validateDesign.style.display = 'none';
 validateHosting.style.display = 'none';
 validateEst.style.display = 'none';
 
+const loader = document.querySelector(".loaderDiv");
+loader.style.display = 'none';
+
+function freePlanDisabledFunction() {
+    freePlanDisabled.forEach((e) => {
+        e.disabled = true;
+        e.style.filter = 'opacity(0.5)';
+        requestFree.disabled = true;
+        requestFree.style.filter = 'opacity(0.8)';
+        requestFree.style.cursor = 'not-allowed';
+    })
+}
 
 function validateFirstName() {
     return firstname.value.length >= 3;
@@ -90,9 +113,6 @@ function validateInputs() {
     const isLastnameValid = validateLastName();
     const isEmailValid = validateEmail();
     const isProjectNameValid = validateProjectNameFunction();
-    const isCustomDesignValid = validateCustomDesign();
-    const isHostingValid = validateHostingFn();
-    const isEstimatedTimeValid = validateEstimatedTime();
 
     invalidName.style.display = isFirstnameValid ? "none" : "block";
     invalidLastname.style.display = isLastnameValid ? "none" : "block";
@@ -101,22 +121,31 @@ function validateInputs() {
     if (planSelect.value === "free" || planSelect.value === "free-pay-as-you-go") {
         validateProjectNameFree.style.display = isProjectNameValid ? "none" : "block";
         validateProjectName.style.display = "none";
+        return isFirstnameValid && isLastnameValid && isEmailValid && isProjectNameValid;
     } else if (planSelect.value === "annualPlan" || planSelect.value === "annualPlanPremium") {
+        const isCustomDesignValid = validateCustomDesign();
+        const isHostingValid = validateHostingFn();
+        const isEstimatedTimeValid = validateEstimatedTime();
+
         validateProjectName.style.display = isProjectNameValid ? "none" : "block";
         validateProjectNameFree.style.display = "none";
+        validateDesign.style.display = isCustomDesignValid ? "none" : "block";
+        validateHosting.style.display = isHostingValid ? "none" : "block";
+        validateEst.style.display = isEstimatedTimeValid ? "none" : "block";
+
+        return isFirstnameValid && isLastnameValid && isEmailValid && isProjectNameValid &&
+            isCustomDesignValid && isHostingValid && isEstimatedTimeValid;
     }
 
-    validateDesign.style.display = isCustomDesignValid ? "none" : "block";
-    validateHosting.style.display = isHostingValid ? "none" : "block";
-    validateEst.style.display = isEstimatedTimeValid ? "none" : "block";
-
-    return isFirstnameValid && isLastnameValid && isEmailValid && isProjectNameValid &&
-        isCustomDesignValid && isHostingValid && isEstimatedTimeValid;
+    return false;
 }
-
+w
 requestFree.addEventListener("click", function(event) {
     event.preventDefault();
     const isValid = validateInputs();
+    const notificationSuccess = document.querySelector(".notification");
+    const xIcon = document.querySelector(".notification .fa");
+
     if (isValid) {
         const formData = {
             firstname: firstname.value,
@@ -124,13 +153,21 @@ requestFree.addEventListener("click", function(event) {
             email: email.value,
             planSelect: planSelect.value,
             projectNameFree: projectNameFree.value,
-            projectNameAnnual: "", // Set empty string as projectNameAnnual is not used in free plan
+            projectNameAnnual: "",
             customDesignSelect: customDesignSelect.value,
             hostingSelect: hostingSelect.value,
             estimatedTimeSelect: estimatedTimeSelect.value
         };
         localStorage.setItem('formData', JSON.stringify(formData));
-        console.log("Success", formData); // Log formData to verify
+        loader.style.display = 'block';
+        setTimeout(function() {
+            notificationSuccess.style.animation = 'noti 4s forwards alternate ease-in';
+        }, 4000);
+        notificationSuccess.style.animation = '';
+        xIcon.addEventListener("click", function() {
+            notificationSuccess.style.display = 'none';
+        })
+        freePlanDisabledFunction();
     } else {
         console.log("Fail");
     }
@@ -145,14 +182,15 @@ requestAnnual.addEventListener("click", function(event) {
             lastname: lastname.value,
             email: email.value,
             planSelect: planSelect.value,
-            projectNameFree: "", // Set empty string as projectNameFree is not used in annual plan
+            projectNameFree: "",
             projectNameAnnual: projectNameAnnual.value,
             customDesignSelect: customDesignSelect.value,
             hostingSelect: hostingSelect.value,
             estimatedTimeSelect: estimatedTimeSelect.value
         };
         localStorage.setItem('formData', JSON.stringify(formData));
-        console.log("Success", formData); // Log formData to verify
+
+        console.log("Success", formData);
     } else {
         console.log("Fail");
     }
