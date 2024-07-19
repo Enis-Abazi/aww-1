@@ -1058,6 +1058,9 @@ header .row .col button {
     header .row .col button {
         display: none;
     }
+    .container .content {
+        padding: 15px 26px;
+    }
     .container .contentText h1 {
         font-size: 40px;
     }
@@ -1087,7 +1090,7 @@ header .row .col button {
         border-bottom: 1px solid var(--color-randomizer) !important;
     }
     .banner {
-        padding: 50px 0;
+        padding: 50px;
     }
     .value .row .col .info h3 {
         font-size: 14px;
@@ -1096,6 +1099,9 @@ header .row .col button {
         border-right: none;
         border-bottom: 1px solid var(--color-randomizer);
         padding: 50px 0;
+    }
+    .container-layout {
+        padding: 50px;
     }
     .container-layout .row {
         flex-direction: column;
@@ -1121,6 +1127,9 @@ header .row .col button {
     }
     .value .row .col-width {
         width: 100%;
+    }
+    .worldwide {
+        padding: 50px;
     }
     .worldwide .contentText h1 {
         font-size: 35px;
