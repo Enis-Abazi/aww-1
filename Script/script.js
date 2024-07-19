@@ -258,3 +258,64 @@ document.addEventListener('DOMContentLoaded', function() {
         startX = null;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const htmlCode = [
+        '<li>&lt;!DOCTYPE html&gt;</li>',
+        '<li>&lt;html&gt;</li>',
+        '<li>&lt;head&gt;</li>',
+        '<li>&lt;title&gt;Page Title&lt;/title&gt;</li>',
+        '<li>&lt;/head&gt;</li>',
+        '<li>&lt;body&gt;</li>',
+        '<li>&lt;h1&gt;This is a Heading&lt;/h1&gt;</li>',
+        '<li>&lt;p&gt;This is a paragraph.&lt;/p&gt;</li>',
+        '<li>&lt;/body&gt;</li>',
+        '<li>&lt;/html&gt;</li>'
+    ].join('');
+
+    const cssCode = [
+        '<li>body {</li>',
+        '<li>  background-color: lightblue;</li>',
+        '<li>}</li>',
+        '<li>h1 {</li>',
+        '<li>  color: navy;</li>',
+        '<li>  margin-left: 20px;</li>',
+        '<li>}</li>'
+    ].join('');
+
+    const jsCode = [
+        '<li>const windowPopup = window.alert("Hello World!");</li>',
+        '<li>const button = document.querySelector("#btn");</li>',
+        '<li>button.addEventListener("click", () => {</li>',
+        '<li>setTimeout(function() {</li>',
+        '<li>windowPopup;</li>',
+        '<li>}, 2000)</li>',
+        '<li>});</li>'
+    ].join('');
+
+    const codeNav = document.querySelector('.code-nav');
+
+    function updateLineNumbers() {
+        const listItems = document.querySelectorAll(".code-nav li");
+        listItems.forEach((li, index) => {
+            li.setAttribute("data-line-number", index + 1);
+        });
+    }
+
+    document.getElementById('html').addEventListener('click', () => {
+        codeNav.innerHTML = htmlCode;
+        updateLineNumbers();
+    });
+
+    document.getElementById('css').addEventListener('click', () => {
+        codeNav.innerHTML = cssCode;
+        updateLineNumbers();
+    });
+
+    document.getElementById('javascript').addEventListener('click', () => {
+        codeNav.innerHTML = jsCode;
+        updateLineNumbers();
+    });
+
+    updateLineNumbers();
+})
