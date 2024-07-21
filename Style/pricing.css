@@ -1539,7 +1539,7 @@ select {
         aspect-ratio: 0/0;
     }
     .second-container .row .col .info p {
-        text-align: start;
+        text-align: center;
     }
     .last .row {
         flex-direction: column;

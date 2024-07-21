@@ -139,7 +139,7 @@ function validateInputs() {
 
     return false;
 }
-w
+
 requestFree.addEventListener("click", function(event) {
     event.preventDefault();
     const isValid = validateInputs();

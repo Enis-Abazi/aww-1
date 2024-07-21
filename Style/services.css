@@ -756,7 +756,7 @@ header .row .col button {
 }
 
 .last-section .contentText h1 {
-    color: #353535;
+    color: var(--font-color);
     font-family: "Medium";
     font-size: 40px;
 }
@@ -1022,11 +1022,20 @@ header .row .col button {
     header .row .col button {
         display: none;
     }
+    .container .content {
+        padding: 9px 21px;
+    }
     .container .contentText h1 {
-        font-size: 36px;
+        font-size: 28px;
+    }
+    .banner .content {
+        padding: 9px 21px;
     }
     .banner .contentText h1 {
         font-size: 28px;
+    }
+    .banner {
+        padding: 50px;
     }
     .banner .row {
         flex-direction: column;
@@ -1035,6 +1044,9 @@ header .row .col button {
     }
     .banner .row .col {
         width: 100%;
+    }
+    .container-layout {
+        padding: 50px;
     }
     .container-layout .contentText h1 {
         font-size: 33px;
@@ -1055,6 +1067,10 @@ header .row .col button {
         height: 100%;
         position: relative;
         top: 6px;
+        padding: 20px 20px;
+    }
+    .last-section .contentText h1 {
+        font-size: 34px;
     }
     .container-layout .row .col {
         width: 100%;
@@ -1066,7 +1082,7 @@ header .row .col button {
         font-size: 30px;
     }
     .last .row .col .contentText h1 {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
     .footer {
@@ -1118,7 +1134,7 @@ header .row .col button {
         display: block;
     }
     .container .contentText h1 {
-        font-size: 37px;
+        font-size: 32px;
     }
     .banner .contentText h1 {
         font-size: 37px;
@@ -1154,7 +1170,7 @@ header .row .col button {
         width: 100%;
     }
     .last .row .col .contentText h1 {
-        font-size: 29px;
+        font-size: 25px;
     }
 }
 

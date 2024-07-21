@@ -1173,46 +1173,6 @@ header .row .col button {
     border-radius: 25px;
 }
 
-
-/* .how-it-works .row .col .title {
-    font-size: 22px;
-    font-family: "Medium";
-    color: var(--random-color);
-    padding: 25px 0;
-}
-
-.how-it-works .row .col ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    row-gap: 10px;
-    align-items: start;
-    padding: 20px 0 40px 0;
-}
-
-.how-it-works .row .col ul li {
-    font-size: 15px;
-    font-family: "Thin";
-    font-weight: 1000;
-    color: var(--paragraph-color);
-}
-
-.how-it-works .row .col button a {
-    color: var(--main-color);
-}
-
-.how-it-works .row .col button {
-    background-color: var(--sky-blue);
-    color: var(--main-color);
-    font-size: 12px;
-    outline: none;
-    cursor: pointer;
-    font-family: "Medium";
-    padding: 13px 16px;
-    border: none;
-    border-radius: 6px;
-} */
-
 .how-it-works .title {
     font-family: "Medium";
     color: var(--sky-blue);
@@ -2292,6 +2252,9 @@ header .row .col button {
         margin: 0;
         box-sizing: border-box;
     }
+    .banner .row {
+        display: inherit;
+    }
     .banner .row .col .title h1 {
         font-size: 35px;
     }
@@ -2325,6 +2288,18 @@ header .row .col button {
         flex-direction: column;
         row-gap: 20px;
     }
+    .choose-us .row .col {
+        padding: 0 35px;
+    }
+    .choose-us .row .col .flex .flex-col {
+        padding: 18px 0;
+    }
+    .choose-us .row .col .content {
+        padding: 30px 0 0 0;
+    }
+    .choose-us .row .col .info {
+        padding: 0 0 56px 0;
+    }
     .our-services {
         padding: 50px 20px;
     }
@@ -2353,7 +2328,7 @@ header .row .col button {
         text-align: start;
     }
     .how-it-works .row .col .flex .col-left {
-        flex-basis: 20%;
+        flex-basis: 25%;
     }
     .our-services .row .col .flex .flex-col {
         padding: 20px 35px;
@@ -2385,11 +2360,14 @@ header .row .col button {
         padding: 25px 0;
     }
     .how-it-works {
-        padding: 50px 20px;
+        padding: 50px 10px;
     }
     .how-it-works .row {
         flex-direction: column;
         row-gap: 35px;
+    }
+    .how-it-works .row .col .flex {
+        align-items: center;
     }
     .how-it-works .c .ch {
         font-family: "Thin";
@@ -2408,7 +2386,7 @@ header .row .col button {
     }
     .how-it-works .c {
         width: 100%;
-        height: 50vh;
+        height: 35vh;
     }
     .how-it-works .c .ci img {
         width: 100%;
@@ -2422,6 +2400,9 @@ header .row .col button {
     }
     .carousel #card-list {
         --count: 6 !important;
+    }
+    .ch {
+        font-size: 30px;
     }
     .model-name {
         font-size: 12px;
@@ -2442,8 +2423,29 @@ header .row .col button {
     .build-faster .row .col .flex {
         max-height: 40vh;
     }
+    .build-faster .row .col {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .build-faster .row .col .flex {
+        max-height: 100%;
+        height: 100%;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .build-faster .row .col .flex .flex-col-20 {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .build-faster .row .col .flex .flex-col-80 {
+        width: 100%;
+        flex-basis: 100%;
+    }
     .build-faster .row .col .flex .flex-col-20 .nav-column {
-        height: 40vh;
+        height: max-content;
+    }
+    .build-faster .row .col .flex .flex-col-80 .code-nav::before {
+        left: 30px;
     }
     .make-merchandising {
         padding: 0;
@@ -2484,6 +2486,9 @@ header .row .col button {
     .footer .text {
         display: none;
     }
+    ._social-link a {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2502,6 +2507,9 @@ header .row .col button {
         justify-content: center;
     }
     .choose-us .container {
+        padding: 20px;
+    }
+    .choose-us .row {
         padding: 20px;
     }
     .banner .row .col .title h1 {
@@ -2523,6 +2531,12 @@ header .row .col button {
         flex-direction: column;
         row-gap: 20px;
     }
+    .choose-us .row .col .info {
+        padding: 0 0 56px 0;
+    }
+    .choose-us .row .col .flex .flex-col {
+        padding: 0;
+    }
     .our-services {
         padding: 50px 20px;
     }
@@ -2537,6 +2551,9 @@ header .row .col button {
     }
     .how-it-works .row .col .flex .col-flex .icon i {
         left: -7px;
+    }
+    .how-it-works .row .col .flex .col-left {
+        flex-basis: 30%;
     }
     .start-your-project {
         padding: 50px 20px;
@@ -2565,7 +2582,7 @@ header .row .col button {
         width: 100%;
     }
     .make-merchandising {
-        padding: 50px 20px;
+        padding: 0;
     }
     .make-merchandising .row {
         flex-direction: column;
@@ -2583,6 +2600,12 @@ header .row .col button {
     }
     .footer .footer-top {
         padding: 50px 20px;
+    }
+    .footer .row .col {
+        flex-basis: inherit;
+    }
+    ._social-link a {
+        font-size: 19px;
     }
 }
 
