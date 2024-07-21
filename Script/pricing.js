@@ -49,6 +49,7 @@ validateEst.style.display = 'none';
 
 const loader = document.querySelector(".loaderDiv");
 loader.style.display = 'none';
+const modalBtn = document.querySelector(".modal-btn");
 
 function freePlanDisabledFunction() {
     freePlanDisabled.forEach((e) => {
@@ -57,6 +58,22 @@ function freePlanDisabledFunction() {
         requestFree.disabled = true;
         requestFree.style.filter = 'opacity(0.8)';
         requestFree.style.cursor = 'not-allowed';
+        setTimeout(function() {
+            modalBtn.checked = false;
+        }, 3000);
+    })
+}
+
+function annualPlanDisabledFunction() {
+    annualPlanDisabled.forEach((e) => {
+        e.disabled = true;
+        e.style.filter = 'opacity(0.5)';
+        requestAnnual.disabled = true;
+        requestAnnual.style.filter = 'opacity(0.8)';
+        requestAnnual.style.cursor = 'not-allowed';
+        setTimeout(function() {
+            modalBtn.checked = false;
+        }, 3000);
     })
 }
 
@@ -176,6 +193,8 @@ requestFree.addEventListener("click", function(event) {
 requestAnnual.addEventListener("click", function(event) {
     event.preventDefault();
     const isValid = validateInputs();
+    const notificationSuccess = document.querySelector(".notification");
+    const xIcon = document.querySelector(".notification .fa");
     if (isValid) {
         const formData = {
             firstname: firstname.value,
@@ -189,8 +208,15 @@ requestAnnual.addEventListener("click", function(event) {
             estimatedTimeSelect: estimatedTimeSelect.value
         };
         localStorage.setItem('formData', JSON.stringify(formData));
-
-        console.log("Success", formData);
+        loader.style.display = 'block';
+        setTimeout(function() {
+            notificationSuccess.style.animation = 'noti 4s forwards alternate ease-in';
+        }, 4000);
+        notificationSuccess.style.animation = '';
+        xIcon.addEventListener("click", function() {
+            notificationSuccess.style.display = 'none';
+        })
+        annualPlanDisabledFunction();
     } else {
         console.log("Fail");
     }

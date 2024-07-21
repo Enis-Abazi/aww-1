@@ -947,7 +947,7 @@ header .row .col button {
 .notification {
     width: 360px;
     padding: 15px;
-    background-color: white;
+    background-color: var(--main-color);
     border-radius: 16px;
     position: fixed;
     bottom: 15px;
@@ -955,6 +955,7 @@ header .row .col button {
     transform: translateY(200%);
     /* animation: noti 4s forwards alternate ease-in; */
     border: 1px solid var(--scrollbar-thumb);
+    z-index: 2;
 }
 
 .notification-header {
