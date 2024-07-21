@@ -2401,6 +2401,9 @@ header .row .col button {
     .carousel #card-list {
         --count: 6 !important;
     }
+    .ch {
+        font-size: 30px;
+    }
     .model-name {
         font-size: 12px;
     }
